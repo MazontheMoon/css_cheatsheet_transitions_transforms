@@ -1,0 +1,152 @@
+/*============
+Page variables
+==============*/
+
+:root {
+  /*color scheme*/
+
+  /*fonts*/
+
+  /*margins and paddings*/
+
+  /*borders*/
+}
+
+/*======================================
+Back to Basics - reset browser defaults
+=======================================*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body * {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/*reset default font - never shall Time New Roman be seen again!*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+figcaption {
+  font-family: Verdana, sans-serif;
+}
+
+/*=====
+Header 
+======*/
+
+/*=======
+Nav Menu
+=========*/
+
+/*==========================
+Main and Section containers
+===========================*/
+
+/*================
+The little touches
+=================*/
+
+/*Back to top shortcut button*/
+.backtotop {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 1.2rem;
+  }
+  
+  .backtotop a:link,
+  .backtotop a:hover,
+  .backtotop a:active,
+  .backtotop a:visited {
+    color: var(--body-col);
+  }
+  
+  /*in case of image not found*/
+  img {
+    position: relative;
+  }
+  img:after {
+    display: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    border: 1px dashed slategrey;
+    background-color: lightgrey;
+    z-index: 1;
+    font-family: verdana;
+    font-size: 0.8rem;
+    content: "" attr(alt) " was not found";
+  }
+
+/*================
+Responsivesnness
+==================*/
+/*
+@media only screen and (min-width: 1024px) {
+
+}
+*/
+
+/*=============
+Accessibility
+===============*/
+
+@media (prefers-color-scheme: dark) {}
+  
+  @media (prefers-color-scheme: light) {}    
+  
+  /*Reset to user browser preference*/
+  @media (prefers-reduced-motion: reduce) {
+    body {
+      scroll-behavior: auto;
+    }
+  }
+  
+  /*======================
+    Ye Olde Time Print View
+    ========================*/
+  @media print {
+    /*remove unneeded elements*/
+
+    /*display footer links*/
+  
+    footer a:link {
+      color: #000;
+      margin: 0;
+      display: block;
+      font-size: 10pt;
+    }
+  
+    footer a::after {
+      content: " [" attr(href) "]";
+    }
+  
+    footer a:link,
+    footer a:visited {
+      color: #000;
+      background: none;
+      padding: 0;
+    }
+  }
