@@ -1,9 +1,13 @@
 # CSS Cheatsheet - Transitions and Transforms
  My cheatsheets to teach myself coding and frontend development - this lesson is focusing on transitions and transforms
 
+ ## Mission
+
+ As a student devloper, I want to reference css cheatsheets , so that I can quickly and easily find the correct elements and values to style my documents
+
  ## Prerequisites
 
- * Web Browser (If you are in a nostalgic mood used vintage tech then preferably not IE)
+ * Web Browser
  * A desire to learn front-end development
 
  ## The Body
@@ -53,7 +57,7 @@ Examples:
  * OpenOffice
 
 ## Acknowledgments
-We would like to offer our appreciation to Spotify and the *Journey* playlist for providing the suitable accompaniment for this project
+We would like to offer our appreciation to Spotify and the *Journey Game Soundtrack* playlist for providing the suitable background noise for this project
 
 ## Author
 
