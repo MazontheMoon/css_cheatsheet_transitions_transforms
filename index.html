@@ -78,20 +78,101 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
           </div>
           <!--end of code_snippet box-->
         </div>
-        <!--end of text_box div-->
+        <!--end of text_box div for Transforms section intro-->
         <div class="subsection" id="subsec_scale">
           <h3>scale()</h3>
           <div class="subsec_intro">
+            <p>...affects the size of the element.</p>
+            <ul>
+              <li>scale(x,y)</li>
+              <li>scaleX()</li>
+              <li>scaleY()</li>
+              <li>scaleZ(z)</li>
+              <li>scale3d(x,y,z)</li>
+            </ul>
           </div>
           <!--end of subsection_intro-->
+          <div class="subsection_box">
+            <figure id="fig_no_scale">
+             <figcaption>What we start with...</figcaption>
+              <div></div>
+            </figure>
+          </div><!--end of subsection_box - noscale-->
+          <div class="subsection_box">
+            <figure id="fig_scale_x">
+              <figcaption>2D scale...x</figcaption>
+              <div></div>
+            </figure>
+            <div class="code_snippet">
+              <code>
+                .foo {<br>
+                  transform: scaleX(40px);<br>
+                  }
+              </code>
+            </div>
+            <!--end of code_snippet box-->
+          </div>
+          <!--end of subsection_box - scaleX-->
+          <div class="subsection_box">
+            <figure id="fig_scale_y">
+              <figcaption>2D scale...y</figcaption>
+              <div></div>
+            </figure>
+            <div class="code_snippet">
+              <code>
+                .foo {<br>
+                  transform: scaleY(40px);<br>
+                  }
+              </code>
+            </div>
+            <!--end of code_snippet box-->
+          </div>
+          <!--end of subsection_box - scaleY-->
+          <div class="subsection_box">
+            <figure id="fig_scale_xy">
+              <figcaption>2D scale...xy</figcaption>
+              <div></div>
+           </figure>
           <div class="code_snippet">
             <code>
+              .foo {<br>
+              transform: scale(40px, 40px);<br>
+              }
             </code>
           </div>
           <!--end of code_snippet box-->
-          <figure>
-          </figure>
-          <!--end of code example figure-->
+          </div>
+          <!--end of subsection_box - scaleXY-->
+          <div class="subsection_box">
+            <figure id="fig_scale_xy">
+              <figcaption>3D scale...z</figcaption>
+              <div></div>
+           </figure>
+           <div class="code_snippet">
+             <code>
+               .foo {<br>
+               transform: scaleZ(40px);<br>
+              }
+             </code>
+           </div>
+           <!--end of code_snippet box-->
+          </div>
+         <!--end of subsection_box - scaleZ-->
+         <div class="subsection_box">
+           <figure id="fig_scale_zxy">
+             <figcaption>3D scale...zxy</figcaption>
+             <div></div>
+           </figure>
+           <div class="code_snippet">
+              <code>
+               .foo {<br>
+               transform: scale3D(40px, 40px, 40px);<br>
+               }
+             </code>
+            </div>
+            <!--end of code_snippet box-->
+          </div>
+          <!--end of subsection_box - scaleZXY-->
         </div>
         <!--end of subsection - scale-->
         <div class="subsection" id="subsec_skew">
@@ -209,7 +290,7 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         </div>
         <!--end of subsection - property-->
         <div class="subsection" id="subsec_delay">
-          <h3>transition-property</h3>
+          <h3>transition-delay</h3>
           <div class="subsec_intro">
           </div>
           <!--end of subsection_intro-->
@@ -224,7 +305,7 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         </div>
         <!--end of subsection - delay-->
         <div class="subsection" id="subsec_duration">
-          <h3>transition-property</h3>
+          <h3>transition-duration</h3>
           <div class="subsec_intro">
           </div>
           <!--end of subsection_intro-->
@@ -239,7 +320,7 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         </div>
         <!--end of subsection - duration-->
         <div class="subsection" id="subsec_timing">
-          <h3>transition-property</h3>
+          <h3>transition-timing-function</h3>
           <div class="subsec_intro">
           </div>
           <!--end of subsection_intro-->
@@ -254,7 +335,7 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         </div>
         <!--end of subsection - timing-->
         <div class="subsection" id="subsec_transition">
-          <h3>transition-property</h3>
+          <h3>transition</h3>
           <div class="subsec_intro">
           </div>
           <!--end of subsection_intro-->
