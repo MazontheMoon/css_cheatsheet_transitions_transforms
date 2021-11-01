@@ -178,16 +178,62 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="subsection" id="subsec_skew">
           <h3>skew()</h3>
           <div class="subsec_intro">
+            <p>... tilts an element to the right or left.</p>
+            <ul>
+              <li>skewX()</li>
+              <li>skewY()</li>
+              <li>skew(x,y)</li>
+            </ul>
           </div>
           <!--end of subsection_intro-->
-          <div class="code_snippet">
-            <code>
-            </code>
-          </div>
-          <!--end of code_snippet box-->
-          <figure>
-          </figure>
-          <!--end of code example figure-->
+          <div class="subsection_box">
+            <figure id="fig_no_skew">
+             <figcaption>What we start with...</figcaption>
+              <div></div>
+            </figure>
+          </div><!--end of subsection_box - noskew-->
+          <div class="subsection_box">
+            <figure id="fig_skew_x">
+             <figcaption>skew...X</figcaption>
+              <div></div>
+            </figure>
+            <div class="code_snippet">
+              <code>
+                .foo {<br>
+                  transform: skewX(10px);<br>
+                  }
+              </code>
+            </div>
+            <!--end of code_snippet box-->
+          </div><!--end of subsection_box - skew_x-->
+          <div class="subsection_box">
+            <figure id="fig_skew_y">
+             <figcaption>skew...Y</figcaption>
+              <div></div>
+            </figure>
+            <div class="code_snippet">
+              <code>
+                .foo {<br>
+                  transform: skewY(10px);<br>
+                  }
+              </code>
+            </div>
+            <!--end of code_snippet box-->
+          </div><!--end of subsection_box - skew_y-->
+          <div class="subsection_box">
+            <figure id="fig_skew_xy">
+             <figcaption>skew...XY</figcaption>
+              <div></div>
+            </figure>
+            <div class="code_snippet">
+              <code>
+                .foo {<br>
+                  transform: skew(10px 10px);<br>
+                  }
+              </code>
+            </div>
+            <!--end of code_snippet box-->
+          </div><!--end of subsection_box - skew_xy-->
         </div>
         <!--end of subsection - skew-->
         <div class="subsection" id="subsec_translate">

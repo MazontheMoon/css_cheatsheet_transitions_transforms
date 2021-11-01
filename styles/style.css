@@ -66,6 +66,14 @@ Main and Section containers
 The little touches
 =================*/
 
+/*=====
+Sidebar
+======*/
+
+/*=====
+Footer
+=======*/
+
 /*Back to top shortcut button*/
 .backtotop {
     position: absolute;
@@ -84,6 +92,7 @@ The little touches
   /*in case of image not found*/
   img {
     position: relative;
+    display: inline-block;
   }
   img:after {
     display: inherit;
