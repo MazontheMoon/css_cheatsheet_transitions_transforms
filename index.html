@@ -325,17 +325,81 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="subsection" id="subsec_rotate">
           <h3>rotate()</h3>
           <div class="subsec_intro">
+            <p>...affects the size of the element.</p>
+            <ul>
+              <li>rotate(deg)</li>
+              <li>rotateX()</li>
+              <li>rotateY()</li>
+              <li>rotate3d(x,y,z)</li>
+            </ul>
           </div>
           <!--end of subsection_intro-->
-          <div class="code_snippet">
-            <code>
-            </code>
+          <div class="subsection_box">
+            <figure id="fig_no_rotate">
+             <figcaption>What we start with...</figcaption>
+              <div></div>
+            </figure>
+          </div><!--end of subsection_box - norotate-->
+          <div class="subsection_box">
+            <figure id="fig_rotate">
+              <figcaption>rotate...</figcaption>
+              <div></div>
+            </figure>
+            <div class="code_snippet">
+              <code>
+                .foo {<br>
+                  transform: rotate(40deg);<br>
+                  }
+              </code>
+            </div>
+            <!--end of code_snippet box-->
           </div>
-          <!--end of code_snippet box-->
-          <figure>
-          </figure>
-          <!--end of code example figure-->
-        </div>
+          <!--end of subsection_box - rotate-->
+          <div class="subsection_box">
+            <figure id="fig_rotate_x">
+              <figcaption>rotate...X</figcaption>
+              <div></div>
+            </figure>
+            <div class="code_snippet">
+              <code>
+                .foo {<br>
+                  transform: rotateX(40deg);<br>
+                  }
+              </code>
+            </div>
+            <!--end of code_snippet box-->
+          </div>
+          <!--end of subsection_box - rotate_x-->
+          <div class="subsection_box">
+            <figure id="fig_rotate_y">
+              <figcaption>rotate...Y</figcaption>
+              <div></div>
+            </figure>
+            <div class="code_snippet">
+              <code>
+                .foo {<br>
+                  transform: rotateY(40deg);<br>
+                  }
+              </code>
+            </div>
+            <!--end of code_snippet box-->
+          </div>
+          <!--end of subsection_box - rotate_y-->
+          <div class="subsection_box">
+            <figure id="fig_rotate_3d">
+              <figcaption>rotate...3D</figcaption>
+              <div></div>
+            </figure>
+            <div class="code_snippet">
+              <code>
+                .foo {<br>
+                  transform: rotate3d(40deg 40deg 40px);<br>
+                  }
+              </code>
+            </div>
+            <!--end of code_snippet box-->
+          </div>
+          <!--end of subsection_box - rotate_3d-->
         <!--end of subsection - rotate-->
         <div class="subsection" id="subsec_matrix">
           <h3>matrix()</h3>
