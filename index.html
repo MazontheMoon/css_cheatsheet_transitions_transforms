@@ -404,16 +404,33 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="subsection" id="subsec_matrix">
           <h3>matrix()</h3>
           <div class="subsec_intro">
+            <p>...combines all transforms into one.</p>
           </div>
           <!--end of subsection_intro-->
-          <div class="code_snippet">
-            <code>
-            </code>
-          </div>
-          <!--end of code_snippet box-->
-          <figure>
-          </figure>
-          <!--end of code example figure-->
+          <div class="subsection_box">
+            <div class="code_snippet">
+              <p>It is possible to have multiple values on the transform property such as...</p>
+              <code>
+                .element {<br>
+                  transform: translateY(40px) scale(20);<br>
+                  }
+              </code>
+              <p>The matrix property combines all transforms into one BUT it is  not written by hand and instead use <a href="https://meyerweb.com/eric/tools/matrix/" target="_blank">tools</a> to create them.</p>
+              <p>So this...</p>
+              <code>
+                .element {<br>
+                  transform: translateY(40px) scale(20);<br>
+                  }
+              </code>
+              <p>Becomes this...</p>
+              <code>
+                .element {<br>
+                  transform: matrix(0.7071067811865475, 0.7071067811865476, -0.7071067811865476, 0.7071067811865475, -0.7071067811865497, 34.648232278140824);<br>
+                  }
+              </code>
+            </div>
+            <!--end of code_snippet box-->            
+          </div><!--end of subsection_box - matrix-->
         </div>
         <!--end of subsection - matrix-->
         <div class="subsection" id="subsec_perspective">
