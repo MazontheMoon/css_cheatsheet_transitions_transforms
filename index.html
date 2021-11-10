@@ -483,7 +483,7 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
           <div class="code_snippet">
             <code>
               .element {<br>
-                ttransform: rotate(25deg);<br>
+                transform: rotate(25deg);<br>
                 transition: &lt;property&gt; &lt;duration&gt; &lt;timing-function&gt; &lt;delay&gt;<br>
                 }
             </code>
@@ -496,21 +496,31 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
           <div class="subsec_intro">
           </div>
           <!--end of subsection_intro-->
-          <div class="code_snippet">
-            <code>
-            </code>
+          <div class="subsection_box">
+            <figure id="fig_trans_prop">
+              <figcaption>transition-property...</figcaption>
+              <div></div>
+            </figure>
+            <div class="code_snippet">
+              <code>
+                .foo {<br>
+                  transform: rotate(40deg);<br>
+                  transition: &lt;property&gt; &lt;duration&gt; &lt;timing-function&gt; &lt;delay&gt;;<br>
+                  }
+              </code>
+            </div>
+            <!--end of code_snippet box-->
           </div>
-          <!--end of code_snippet box-->
-          <figure>
-          </figure>
-          <!--end of code example figure-->
+          <!--end of subsection_box - trans_prop-->
         </div>
         <!--end of subsection - property-->
         <div class="subsection" id="subsec_delay">
           <h3>transition-delay</h3>
           <div class="subsec_intro">
+            <p>...is the property you want to have the effect on.</p>
           </div>
           <!--end of subsection_intro-->
+
           <div class="code_snippet">
             <code>
             </code>
