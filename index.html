@@ -560,16 +560,82 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="subsection" id="subsec_timing">
           <h3>transition-timing-function</h3>
           <div class="subsec_intro">
+            <p>...specifies the speed curve of the transition effect.</p>
+            <ul>
+              <li>ease(default)</li>
+              <li>linear</li>
+              <li>ease-in</li>
+              <li>ease-out</li>
+              <li>ease-in-out</li>
+              <li>cubic-bezier(n,n,n,n)</li>
+            </ul>
+            <div class="code_snippet">
+              <code>
+                .foo {<br>
+                  transform: rotate(40deg);<br>
+                  transition-timing-function: ease-in-out; <br>
+                  }
+              </code>
+            </div>
+            <!--end of code_snippet box-->
           </div>
           <!--end of subsection_intro-->
-          <div class="code_snippet">
-            <code>
-            </code>
+          <div class="subsection_box">
+            <figure id="fig_ease">
+              <figcaption>ease...</figcaption>
+              <p>..a transition effect with a slow start, then fast, then slow end.</p>
+              <div></div>
+             </figure>
           </div>
-          <!--end of code_snippet box-->
-          <figure>
-          </figure>
-          <!--end of code example figure-->
+          <!--end of subsection_box - ease-->
+          <div class="subsection_box">
+            <figure id="fig_linear">
+              <figcaption>linear...</figcaption>
+              <p>..a transition effect with the same speed from start to end.</p>
+              <div></div>
+             </figure>
+          </div>
+          <!--end of subsection_box - linear-->
+          <div class="subsection_box">
+            <figure id="fig_ease_in">
+              <figcaption>ease-in...</figcaption>
+              <p>..a transition effect with a slow start.</p>
+              <div></div>
+             </figure>
+          </div>
+          <!--end of subsection_box - ease-in-->
+          <div class="subsection_box">
+            <figure id="fig_ease_out">
+              <figcaption>ease-out...</figcaption>
+              <p>..a transition effect with a slow end.</p>
+              <div></div>
+             </figure>
+          </div>
+          <!--end of subsection_box - ease-out-->
+          <div class="subsection_box">
+            <figure id="fig_ease_in_out">
+              <figcaption>ease-in-out...</figcaption>
+              <p>..a transition effect with a slow start and end.</p>
+              <div></div>
+             </figure>
+          </div>
+          <!--end of subsection_box - ease-in-out-->
+          <div class="subsection_box">
+            <figure id="fig_ease_in">
+              <figcaption>ease-in...</figcaption>
+              <p>..a transition effect with a slow start.</p>
+              <div></div>
+             </figure>
+          </div>
+          <!--end of subsection_box - cubic-bez-->
+          <div class="subsection_box">
+            <figure id="fig_cube_bez">
+              <figcaption>cubic-bezier(n,n,n,n)</figcaption>
+              <p>..define your own values in a cubic-bezier function.</p>
+              <div></div>
+             </figure>
+          </div>
+          <!--end of subsection_box - ease-in-->
         </div>
         <!--end of subsection - timing-->
         <div class="subsection" id="subsec_transition">
@@ -582,16 +648,12 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
             </code>
           </div>
           <!--end of code_snippet box-->
-          <figure>
-          </figure>
-          <!--end of code example figure-->
         </div>
         <!--end of subsection - transition-->
       </section>
       <!--end of section - transitions-->
     </main>
     <aside>
-      <img id="profile_pic" alt="A black and white photo of the author who is female with dark hair and wearing glasses" src="https://github.com/MazontheMoon/css_cheatsheet_transitions_transforms/blob/main/assets/mugshot.jpg?raw=true">
       <p>This project is one in my expanding collection of CSS cheat sheets that I've created on my journey towards becoming a frontend developer.</p>
       <p>You might also like to see my other creations (there is some sort of method to the madness):</p>
       <ul>
@@ -610,8 +672,8 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
     </aside>
     <footer>
       <p>I am <abbr title="Mary Ronan">MazontheMoon</abbr></p>
+      <img id="profile_pic" alt="A black and white photo of the author who is female with dark hair and wearing glasses" src="https://github.com/MazontheMoon/css_cheatsheet_transitions_transforms/blob/main/assets/mugshot.jpg?raw=true">
       <div class="social_media_box">
-
       </div>
       <p>A HTML and CSS teach-myself-coding project!</p>
     </footer>
