@@ -641,10 +641,20 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="subsection" id="subsec_transition">
           <h3>transition</h3>
           <div class="subsec_intro">
+            <p>...is the shorthand for transition-property transition-duration transition-timing-function and transition-delay.</p>
           </div>
           <!--end of subsection_intro-->
           <div class="code_snippet">
             <code>
+              .element {<br>
+                transition: &lt;property&gt; &lt;duration&gt; &lt;timing-function&gt; &lt;delay&gt;;<br>
+                }
+            </code>
+            <p>You can also add multiples seperated by comma:</p>
+            <code>
+              .element {<br>
+                transition: width 2s, height 2s, transform 2s;<br>
+                }
             </code>
           </div>
           <!--end of code_snippet box-->
