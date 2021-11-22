@@ -31,15 +31,21 @@ Example "section-content"
 
 Keyword: Description FILE
 
-Examples:
+Example:
 
-* create: Add new document INDEX
-* new: Add new content for sectionB INDEX
-* update: Add info to existing section on INDEX
-* fix: Typo in sectionA content INDEX
-* style: Add colour schema to page STYLESHEET
-* docs: Add naming convention rules to README
-* test: Test accessibility for styles in STYLESHEET
+style: Add colour schema to page STYLESHEET
+
+
+Keywords:
+
+* new: creating a new document or file
+* build: changes specific to the build or system
+* update: adding content or changes to document
+* fix: correcting a specifiec issue
+* style: style specific changes
+* docs: changes to documentation
+* test: specific feature tested
+* revert: reverting to a previous commit
 
 ## Resources
 
