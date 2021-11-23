@@ -641,10 +641,20 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="subsection" id="subsec_transition">
           <h3>transition</h3>
           <div class="subsec_intro">
+            <p>...is the shorthand for transition-property transition-duration transition-timing-function and transition-delay.</p>
           </div>
           <!--end of subsection_intro-->
           <div class="code_snippet">
             <code>
+              .element {<br>
+                transition: &lt;property&gt; &lt;duration&gt; &lt;timing-function&gt; &lt;delay&gt;;<br>
+                }
+            </code>
+            <p>You can also add multiples seperated by comma:</p>
+            <code>
+              .element {<br>
+                transition: width 2s, height 2s, transform 2s;<br>
+                }
             </code>
           </div>
           <!--end of code_snippet box-->
@@ -657,25 +667,31 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
       <p>This project is one in my expanding collection of CSS cheat sheets that I've created on my journey towards becoming a frontend developer.</p>
       <p>You might also like to see my other creations (there is some sort of method to the madness):</p>
       <ul>
-        <li><a href="#">Cascade &amp; Inheritance</a></li>
-        <li><a href="#">Box Model</a></li>
-        <li><a href="#">Units &amp; Values</a></li>
-        <li><a href="#">Selectors</a></li>
-        <li><a href="#">Display &amp; Positioning</a></li>
-        <li><a href="#">Flexbox</a></li>
-        <li><a href="#">Grid</a></li>
-        <li><a href="#">Backgrounds</a></li>
-        <li><a href="#">Text &amp; Fonts</a></li>
-        <li><a href="#">Lists &amp; Links</a></li>
-        <li><a href="#">Images</a></li>
+        <li><a href="https://codepen.io/mazonthemoon/full/GRpRYvq" target="_blank">Cascade &amp; Inheritance</a></li>
+        <li><a href="https://codepen.io/mazonthemoon/full/KKdgeoJ" target="_blank">Box Model</a></li>
+        <li><a href="https://codepen.io/mazonthemoon/full/zYGbdJK" target="_blank">Units &amp; Values</a></li>
+        <li><a href="https://codepen.io/mazonthemoon/full/dyGJRvx" target="_blank">Selectors</a></li>
+        <li><a href="https://codepen.io/mazonthemoon/full/wvGzrOP" target="_blank">Display &amp; Positioning</a></li>
+        <li><a href="https://codepen.io/mazonthemoon/full/JjXVMrb" target="_blank">Flexbox</a></li>
+        <li><a href="https://codepen.io/mazonthemoon/full/bGdjByy" target="_blank">Grid</a></li>
+        <li><a href="https://codepen.io/mazonthemoon/full/KKgWeoO" target="_blank">Backgrounds</a></li>
+        <li><a href="https://codepen.io/mazonthemoon/full/xxRjbGR" target="_blank">Text &amp; Fonts</a></li>
+        <li><a href="https://codepen.io/mazonthemoon/full/poRKbZv" target="_blank">Lists &amp; Links</a></li>
+        <li><a href="https://codepen.io/mazonthemoon/full/xxqrdrV" target="_blank">Images</a></li>
       </ul>
     </aside>
     <footer>
       <p>I am <abbr title="Mary Ronan">MazontheMoon</abbr></p>
       <img id="profile_pic" alt="A black and white photo of the author who is female with dark hair and wearing glasses" src="https://github.com/MazontheMoon/css_cheatsheet_transitions_transforms/blob/main/assets/mugshot.jpg?raw=true">
       <div class="social_media_box">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/mary-ronan/" target="_blank"> <span class="fab fa-linkedin"> </span></a></li>
+          <li><a href="https://github.com/MazontheMoon" target="_blank"> <span class="fab fa-github-square"> </span></a></li>
+          <li><a href="https://codepen.io/mazonthemoon/#" target="_blank"> <span class="fab fa-codepen"> </span></a></li>
+          <li><a href="https://mazcodesonthemoon.wordpress.com/2020/10/12/teaching-myself-to-code-css/" target="_blank"> <span class="fab fa-wordpress"> </span></a></li>
+        </ul>
       </div>
-      <p>A HTML and CSS teach-myself-coding project!</p>
+      <p>A <span class="fab fa-html5"></span> and <span class="fab fa-css3"></span> teach-myself-coding project!</p>
     </footer>
   </body>
     
