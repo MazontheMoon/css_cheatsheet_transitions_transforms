@@ -6,7 +6,7 @@ Page variables
   /*color scheme*/
 
   /*fonts*/
-
+  
   /*margins and paddings*/
 
   /*borders*/
@@ -36,17 +36,8 @@ body * {
   -moz-box-sizing: border-box;
 }
 
-/*reset default font - never shall Time New Roman be seen again!*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-li,
-figcaption {
+/*reset default font - never shall Times New Roman be seen again!*/
+body:is(h1, h2, h3, h4, h5, h6, p, a, li, figcaption) {
   font-family: Verdana, sans-serif;
 }
 
@@ -62,10 +53,6 @@ Nav Menu
 Main and Section containers
 ===========================*/
 
-/*================
-The little touches
-=================*/
-
 /*=====
 Sidebar
 ======*/
@@ -73,6 +60,11 @@ Sidebar
 /*=====
 Footer
 =======*/
+
+
+/*================
+The little touches
+=================*/
 
 /*Back to top shortcut button*/
 .backtotop {
@@ -124,14 +116,14 @@ Accessibility
 
 @media (prefers-color-scheme: dark) {}
   
-  @media (prefers-color-scheme: light) {}    
+@media (prefers-color-scheme: light) {}    
   
-  /*Reset to user browser preference*/
-  @media (prefers-reduced-motion: reduce) {
-    body {
-      scroll-behavior: auto;
-    }
+/*Reset to user browser preference*/
+@media (prefers-reduced-motion: reduce) {
+  body {
+    scroll-behavior: auto;
   }
+}
   
   /*======================
     Ye Olde Time Print View
