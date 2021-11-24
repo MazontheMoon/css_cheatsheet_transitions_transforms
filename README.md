@@ -14,7 +14,7 @@
 
  * HTML
  * CSS
- * Sweat, some tears and a bit of laughter
+ * Some sweat, some tears and a bit of laughter
 
 
 ## Versioning
