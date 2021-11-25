@@ -20,6 +20,7 @@
 ## Versioning
 
 Version 1.1 - Initial content
+Version 1.2 - Apply styling
 
 
 ## Code Naming Conventions
@@ -41,7 +42,7 @@ Keywords:
 * new: creating a new document or file
 * build: changes specific to the build or system
 * update: adding content or changes to document
-* fix: correcting a specifiec issue
+* fix: correcting a specific issue
 * style: style specific changes
 * docs: changes to documentation
 * test: specific feature tested
