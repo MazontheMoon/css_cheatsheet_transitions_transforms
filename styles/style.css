@@ -42,26 +42,52 @@ body:is(h1, h2, h3, h4, h5, h6, p, a, li, figcaption) {
   font-family: Verdana, sans-serif;
 }
 
+
+/*=====
+Layout
+======*/
+body {
+  display: grid;
+
+}
+
 /*=====
 Header 
 ======*/
-
+body > header {
+  grid-area: header;
+  border: 2px;
+}
 /*=======
 Nav Menu
 =========*/
-
+nav {
+  grid-area: header;
+  border: 2px;
+}
 /*==========================
 Main and Section containers
 ===========================*/
+main {
+  grid-area: main;
+  border: 2px;
+}
 
 /*=====
 Sidebar
 ======*/
+aside {
+  grid-area: aside;
+  border: 2px;
+}
 
 /*=====
 Footer
 =======*/
-
+footer {
+  grid-area: footer;
+  border: 2px;
+}
 
 /*================
 The little touches
@@ -82,7 +108,7 @@ The little touches
     color: var(--body-col);
   }
   
-  /*in case of image not found*/
+  /*in case of image not found
   img {
     position: relative;
     display: inline-block;
@@ -101,6 +127,7 @@ The little touches
     font-size: 0.8rem;
     content: "" attr(alt) " was not found";
   }
+in case of image not found*/
 
 /*================
 Responsivesnness
