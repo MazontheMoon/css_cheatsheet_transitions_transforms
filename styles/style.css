@@ -3,7 +3,14 @@ Page variables
 ==============*/
 
 :root {
+
   /*color scheme*/
+  --col_main: hsl(263, 60, 48); 
+  --col_shadow: hsl(239, 53, 59); 
+  --col_lowlight: hsl(203, 69, 59); 
+  --col_highlight: hsl(180, 66, 63); 
+  --col_dark: #1E1B18;
+  --col_light: #FFFAFF;
 
   /*fonts*/
   
@@ -48,6 +55,16 @@ Layout
 ======*/
 body {
   display: grid;
+  grid-template-areas: 
+  "header header header"
+  "nav nav nav"
+  "main main main"
+  "aside aside aside"
+  "footer footer footer";
+  grid-gap: 0.6rem;
+  margin: 1rem;
+  background-color:#6930C3; /*fallback*/
+  background-image: linear-gradient(to bottom, var(--col_light, #FFFAFF), var(--col_main, #6930C3) var(--col_shadow, #5E60CE) var(--col_lowlight, #4EA8DE) var(--col_highlight, #64DFDF));
 
 }
 
@@ -56,21 +73,22 @@ Header
 ======*/
 body > header {
   grid-area: header;
-  border: 2px;
+  border: 5px solid blue;
 }
 /*=======
 Nav Menu
 =========*/
 nav {
-  grid-area: header;
-  border: 2px;
+  grid-area: nav;
+  border: 5px solid pink;
 }
+
 /*==========================
 Main and Section containers
 ===========================*/
 main {
   grid-area: main;
-  border: 2px;
+  border: 5px solid green;
 }
 
 /*=====
@@ -78,7 +96,7 @@ Sidebar
 ======*/
 aside {
   grid-area: aside;
-  border: 2px;
+  border: 5px solid yellow;
 }
 
 /*=====
@@ -86,7 +104,7 @@ Footer
 =======*/
 footer {
   grid-area: footer;
-  border: 2px;
+  border: 5px solid orange;
 }
 
 /*================
