@@ -3,7 +3,14 @@ Page variables
 ==============*/
 
 :root {
+
   /*color scheme*/
+  --col_main: #6930C3; 
+  --col_shadow: #5E60CE ; 
+  --col_lowlight: #4EA8DE; 
+  --col_highlight: #64DFDF; 
+  --col_dark: #1E1B18;
+  --col_light: #FFFAFF;
 
   /*fonts*/
   
@@ -38,8 +45,13 @@ body * {
 }
 
 /*reset default font - never shall Times New Roman be seen again!*/
-body:is(h1, h2, h3, h4, h5, h6, p, a, li, figcaption) {
+:is(h1, h2, h3, h4, h5, h6, p, a, li, figcaption) {
   font-family: Verdana, sans-serif;
+}
+
+
+ li {
+  list-style: none;
 }
 
 
@@ -48,6 +60,16 @@ Layout
 ======*/
 body {
   display: grid;
+  grid-template-areas: 
+  "header header header"
+  "nav nav nav"
+  "main main main"
+  "aside aside aside"
+  "footer footer footer";
+  grid-gap: 0.6rem;
+  margin: 1rem;
+  background-color: var(--col_main);
+  background-image: linear-gradient(to bottom,#6930C3, #5930C3, #4930C3, #3930C3, #2930C3, #1930C3);
 
 }
 
@@ -56,21 +78,38 @@ Header
 ======*/
 body > header {
   grid-area: header;
-  border: 2px;
+  color: #FFFAFF;
+  text-align: center;
 }
 /*=======
 Nav Menu
 =========*/
 nav {
-  grid-area: header;
-  border: 2px;
+  grid-area: nav;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0.6rem;
+ 
+}
+
+nav ul li {
+  flex: 1;
+  text-align: center;
 }
 /*==========================
 Main and Section containers
 ===========================*/
 main {
   grid-area: main;
-  border: 2px;
+  padding: 0.6rem;
+  border: 1px solid var(--col_dark);
+  box-shadow: 1px 1px 4px var(--col_dark),
+  -1px -1px 4px var(--col_dark);
+  background-color: var(--col_light);
+  
 }
 
 /*=====
@@ -78,7 +117,7 @@ Sidebar
 ======*/
 aside {
   grid-area: aside;
-  border: 2px;
+
 }
 
 /*=====
@@ -86,7 +125,7 @@ Footer
 =======*/
 footer {
   grid-area: footer;
-  border: 2px;
+
 }
 
 /*================
@@ -105,7 +144,7 @@ The little touches
   .backtotop a:hover,
   .backtotop a:active,
   .backtotop a:visited {
-    color: var(--body-col);
+    color: var(--col_main);
   }
   
   /*in case of image not found
@@ -142,12 +181,23 @@ Responsivesnness
 Accessibility
 ===============*/
 
-@media (prefers-color-scheme: dark) {}
+@media (prefers-color-scheme: dark) {
+  root {
+    --col_dark: #1E1B18;
+    --col_light: #FFFAFF;
+  }
+}
   
-@media (prefers-color-scheme: light) {}    
+@media (prefers-color-scheme: light) {
+  root {
+    --col_dark: #FFFAFF;
+    --col_light: #1E1B18;
+  }
+}    
   
 /*Reset to user browser preference*/
 @media (prefers-reduced-motion: reduce) {
+
   body {
     scroll-behavior: auto;
   }
