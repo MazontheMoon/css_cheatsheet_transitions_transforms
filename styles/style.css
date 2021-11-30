@@ -5,10 +5,10 @@ Page variables
 :root {
 
   /*color scheme*/
-  --col_main: hsl(263, 60, 48); 
-  --col_shadow: hsl(239, 53, 59); 
-  --col_lowlight: hsl(203, 69, 59); 
-  --col_highlight: hsl(180, 66, 63); 
+  --col_main: #6930C3; 
+  --col_shadow: #5E60CE ; 
+  --col_lowlight: #4EA8DE; 
+  --col_highlight: #64DFDF; 
   --col_dark: #1E1B18;
   --col_light: #FFFAFF;
 
@@ -45,8 +45,13 @@ body * {
 }
 
 /*reset default font - never shall Times New Roman be seen again!*/
-body:is(h1, h2, h3, h4, h5, h6, p, a, li, figcaption) {
+:is(h1, h2, h3, h4, h5, h6, p, a, li, figcaption) {
   font-family: Verdana, sans-serif;
+}
+
+
+ li {
+  list-style: none;
 }
 
 
@@ -63,8 +68,8 @@ body {
   "footer footer footer";
   grid-gap: 0.6rem;
   margin: 1rem;
-  background-color:#6930C3; /*fallback*/
-  background-image: linear-gradient(to bottom, var(--col_light, #FFFAFF), var(--col_main, #6930C3) var(--col_shadow, #5E60CE) var(--col_lowlight, #4EA8DE) var(--col_highlight, #64DFDF));
+  background-color: var(--col_main);
+  background-image: linear-gradient(to bottom,#6930C3, #5930C3, #4930C3, #3930C3, #2930C3, #1930C3);
 
 }
 
@@ -73,22 +78,38 @@ Header
 ======*/
 body > header {
   grid-area: header;
-  border: 5px solid blue;
+  color: #FFFAFF;
+  text-align: center;
 }
 /*=======
 Nav Menu
 =========*/
 nav {
   grid-area: nav;
-  border: 5px solid pink;
 }
 
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0.6rem;
+ 
+}
+
+nav ul li {
+  flex: 1;
+  text-align: center;
+}
 /*==========================
 Main and Section containers
 ===========================*/
 main {
   grid-area: main;
-  border: 5px solid green;
+  padding: 0.6rem;
+  border: 1px solid var(--col_dark);
+  box-shadow: 1px 1px 4px var(--col_dark),
+  -1px -1px 4px var(--col_dark);
+  background-color: var(--col_light);
+  
 }
 
 /*=====
@@ -96,7 +117,7 @@ Sidebar
 ======*/
 aside {
   grid-area: aside;
-  border: 5px solid yellow;
+
 }
 
 /*=====
@@ -104,7 +125,7 @@ Footer
 =======*/
 footer {
   grid-area: footer;
-  border: 5px solid orange;
+
 }
 
 /*================
@@ -123,7 +144,7 @@ The little touches
   .backtotop a:hover,
   .backtotop a:active,
   .backtotop a:visited {
-    color: var(--body-col);
+    color: var(--col_main);
   }
   
   /*in case of image not found
@@ -160,12 +181,23 @@ Responsivesnness
 Accessibility
 ===============*/
 
-@media (prefers-color-scheme: dark) {}
+@media (prefers-color-scheme: dark) {
+  root {
+    --col_dark: #1E1B18;
+    --col_light: #FFFAFF;
+  }
+}
   
-@media (prefers-color-scheme: light) {}    
+@media (prefers-color-scheme: light) {
+  root {
+    --col_dark: #FFFAFF;
+    --col_light: #1E1B18;
+  }
+}    
   
 /*Reset to user browser preference*/
 @media (prefers-reduced-motion: reduce) {
+
   body {
     scroll-behavior: auto;
   }
