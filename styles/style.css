@@ -3,19 +3,18 @@ Page variables
 ==============*/
 
 :root {
-
   /*color scheme*/
-  --col_main: #6930C3; 
-  --col_shadow: #5E60CE ; 
-  --col_lowlight: #4EA8DE; 
-  --col_highlight: #64DFDF; 
-  --col_dark: #1E1B18;
-  --col_light: #FFFAFF;
+  --col_main: #6930c3;
+  --col_shadow: #5e60ce;
+  --col_lowlight: #4ea8de;
+  --col_highlight: #64dfdf;
+  --col_dark: #1e1b18;
+  --col_light: #fffaff;
 
   /*fonts*/
-  --font_header: 'Lobster', cursive;
-  --font_main: 'Roboto', sans-serif;
-  
+  --font_header: "Lobster", cursive;
+  --font_main: "Roboto", sans-serif;
+
   /*margins and paddings*/
 
   /*borders*/
@@ -51,28 +50,33 @@ body * {
   font-family: Verdana, sans-serif;
 }
 
-
- li {
+li {
   list-style: none;
 }
-
 
 /*=====
 Layout
 ======*/
 body {
   display: grid;
-  grid-template-areas: 
-  "header header header"
-  "nav nav nav"
-  "main main main"
-  "aside aside aside"
-  "footer footer footer";
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "aside aside aside"
+    "footer footer footer";
   grid-gap: 0.6rem;
   margin: 1rem;
   background-color: var(--col_main);
-  background-image: linear-gradient(to bottom,#6930C3, #5930C3, #4930C3, #3930C3, #2930C3, #1930C3);
-
+  background-image: linear-gradient(
+    to bottom,
+    #6930c3,
+    #5930c3,
+    #4930c3,
+    #3930c3,
+    #2930c3,
+    #1930c3
+  );
 }
 
 /*=====
@@ -80,8 +84,14 @@ Header
 ======*/
 body > header {
   grid-area: header;
-  color: #FFFAFF;
+}
+
+h1 {
+  color: #fffaff;
   text-align: center;
+  font-family: var(--font_header);
+  font-size: clamp(2.4rem, 3.2vw, 5rem);
+  text-shadow: 0px 0px 10px #000;
 }
 /*=======
 Nav Menu
@@ -94,7 +104,6 @@ nav ul {
   display: flex;
   flex-flow: row wrap;
   padding: 0.6rem;
- 
 }
 
 nav ul li {
@@ -108,10 +117,8 @@ main {
   grid-area: main;
   padding: 0.6rem;
   border: 1px solid var(--col_dark);
-  box-shadow: 1px 1px 4px var(--col_dark),
-  -1px -1px 4px var(--col_dark);
+  box-shadow: 1px 1px 4px var(--col_dark), -1px -1px 4px var(--col_dark);
   background-color: var(--col_light);
-  
 }
 
 /*=====
@@ -119,7 +126,6 @@ Sidebar
 ======*/
 aside {
   grid-area: aside;
-
 }
 
 /*=====
@@ -127,7 +133,6 @@ Footer
 =======*/
 footer {
   grid-area: footer;
-
 }
 
 /*================
@@ -136,20 +141,20 @@ The little touches
 
 /*Back to top shortcut button*/
 .backtotop {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font-size: 1.2rem;
-  }
-  
-  .backtotop a:link,
-  .backtotop a:hover,
-  .backtotop a:active,
-  .backtotop a:visited {
-    color: var(--col_main);
-  }
-  
-  /*in case of image not found
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1.2rem;
+}
+
+.backtotop a:link,
+.backtotop a:hover,
+.backtotop a:active,
+.backtotop a:visited {
+  color: var(--col_main);
+}
+
+/*in case of image not found
   img {
     position: relative;
     display: inline-block;
@@ -185,49 +190,48 @@ Accessibility
 
 @media (prefers-color-scheme: dark) {
   root {
-    --col_dark: #1E1B18;
-    --col_light: #FFFAFF;
+    --col_dark: #1e1b18;
+    --col_light: #fffaff;
   }
 }
-  
+
 @media (prefers-color-scheme: light) {
   root {
-    --col_dark: #FFFAFF;
-    --col_light: #1E1B18;
+    --col_dark: #fffaff;
+    --col_light: #1e1b18;
   }
-}    
-  
+}
+
 /*Reset to user browser preference*/
 @media (prefers-reduced-motion: reduce) {
-
   body {
     scroll-behavior: auto;
   }
 }
-  
-  /*======================
+
+/*======================
     Ye Olde Time Print View
     ========================*/
-  @media print {
-    /*remove unneeded elements*/
+@media print {
+  /*remove unneeded elements*/
 
-    /*display footer links*/
-  
-    footer a:link {
-      color: #000;
-      margin: 0;
-      display: block;
-      font-size: 10pt;
-    }
-  
-    footer a::after {
-      content: " [" attr(href) "]";
-    }
-  
-    footer a:link,
-    footer a:visited {
-      color: #000;
-      background: none;
-      padding: 0;
-    }
+  /*display footer links*/
+
+  footer a:link {
+    color: #000;
+    margin: 0;
+    display: block;
+    font-size: 10pt;
   }
+
+  footer a::after {
+    content: " [" attr(href) "]";
+  }
+
+  footer a:link,
+  footer a:visited {
+    color: #000;
+    background: none;
+    padding: 0;
+  }
+}
