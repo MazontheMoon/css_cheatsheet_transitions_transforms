@@ -39,94 +39,96 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
   6. Resources (aside)
   7. Footer
 ------------------------->
-  <body>
-    <header>
-      <h1>CSS Transforms and Transitions</h1>
-    </header>
-    <nav>
-      <ul>
-        <li>Transforms</li>
-        <li>Transitions</li>
-      </ul>
-    </nav>
-    <main>
-      <!--end of section - intro-->
-      <section id="sec_transforms">
-        <h2>Transforms...</h2>
-        <div class="text_box">
-          <p>The <span class="code_word">transform</span> property applies a 2D or 3D transformation to an element.</p>
-          <ul class="sub_nav">
-            <li><a href="#subsec_scale">scale()</a></li>
-            <li><a href="#subsec_skew">skew()</a></li>
-            <li><a href="#subsec_translate">translate()</a></li>
-            <li><a href="#subsec_rotate">rotate()</a></li>
-            <li><a href="#subsec_matrix">matrix()</a></li>
-            <li><a href="#subsec_perspective">perspective()</a></li>
+
+<body>
+  <header>
+    <h1>CSS Transforms and Transitions</h1>
+  </header>
+  <nav>
+    <ul>
+      <li>Transforms</li>
+      <li>Transitions</li>
+    </ul>
+  </nav>
+  <main>
+    <!--end of section - intro-->
+    <section id="sec_transforms">
+      <h2>Transforms...</h2>
+      <div class="text_box">
+        <p>The <span class="code_word">transform</span> property applies a 2D or 3D transformation to an element.</p>
+        <ul class="sub_nav">
+          <li><a href="#subsec_scale">scale()</a></li>
+          <li><a href="#subsec_skew">skew()</a></li>
+          <li><a href="#subsec_translate">translate()</a></li>
+          <li><a href="#subsec_rotate">rotate()</a></li>
+          <li><a href="#subsec_matrix">matrix()</a></li>
+          <li><a href="#subsec_perspective">perspective()</a></li>
+        </ul>
+        <div class="code_snippet">
+          <code>
+            .element {<br>
+            transform: translateY(40px);<br>
+            }
+          </code>
+        </div>
+        <!--end of code_snippet box-->
+      </div>
+      <!--end of text_box div for Transforms section intro-->
+      <div class="subsection" id="subsec_scale">
+        <h3>scale()</h3>
+        <div class="subsec_intro">
+          <p>...affects the size of the element.</p>
+          <ul>
+            <li>scale(x,y)</li>
+            <li>scaleX()</li>
+            <li>scaleY()</li>
+            <li>scaleZ(z)</li>
+            <li>scale3d(x,y,z)</li>
           </ul>
+        </div>
+        <!--end of subsection_intro-->
+        <div class="subsection_box">
+          <figure id="fig_no_scale">
+            <figcaption>What we start with...</figcaption>
+            <div></div>
+          </figure>
+        </div>
+        <!--end of subsection_box - noscale-->
+        <div class="subsection_box">
+          <figure id="fig_scale_x">
+            <figcaption>2D scale...x</figcaption>
+            <div></div>
+          </figure>
           <div class="code_snippet">
             <code>
-              .element {<br>
-                transform: translateY(40px);<br>
-                }
+              .foo {<br>
+              transform: scaleX(40px);<br>
+              }
             </code>
           </div>
           <!--end of code_snippet box-->
         </div>
-        <!--end of text_box div for Transforms section intro-->
-        <div class="subsection" id="subsec_scale">
-          <h3>scale()</h3>
-          <div class="subsec_intro">
-            <p>...affects the size of the element.</p>
-            <ul>
-              <li>scale(x,y)</li>
-              <li>scaleX()</li>
-              <li>scaleY()</li>
-              <li>scaleZ(z)</li>
-              <li>scale3d(x,y,z)</li>
-            </ul>
+        <!--end of subsection_box - scaleX-->
+        <div class="subsection_box">
+          <figure id="fig_scale_y">
+            <figcaption>2D scale...y</figcaption>
+            <div></div>
+          </figure>
+          <div class="code_snippet">
+            <code>
+              .foo {<br>
+              transform: scaleY(40px);<br>
+              }
+            </code>
           </div>
-          <!--end of subsection_intro-->
-          <div class="subsection_box">
-            <figure id="fig_no_scale">
-             <figcaption>What we start with...</figcaption>
-              <div></div>
-            </figure>
-          </div><!--end of subsection_box - noscale-->
-          <div class="subsection_box">
-            <figure id="fig_scale_x">
-              <figcaption>2D scale...x</figcaption>
-              <div></div>
-            </figure>
-            <div class="code_snippet">
-              <code>
-                .foo {<br>
-                  transform: scaleX(40px);<br>
-                  }
-              </code>
-            </div>
-            <!--end of code_snippet box-->
-          </div>
-          <!--end of subsection_box - scaleX-->
-          <div class="subsection_box">
-            <figure id="fig_scale_y">
-              <figcaption>2D scale...y</figcaption>
-              <div></div>
-            </figure>
-            <div class="code_snippet">
-              <code>
-                .foo {<br>
-                  transform: scaleY(40px);<br>
-                  }
-              </code>
-            </div>
-            <!--end of code_snippet box-->
-          </div>
-          <!--end of subsection_box - scaleY-->
-          <div class="subsection_box">
-            <figure id="fig_scale_xy">
-              <figcaption>2D scale...xy</figcaption>
-              <div></div>
-           </figure>
+          <!--end of code_snippet box-->
+        </div>
+        <!--end of subsection_box - scaleY-->
+        <div class="subsection_box">
+          <figure id="fig_scale_xy">
+            <figcaption>2D scale...xy</figcaption>
+            <div></div>
+          </figure>
           <div class="code_snippet">
             <code>
               .foo {<br>
@@ -135,402 +137,414 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
             </code>
           </div>
           <!--end of code_snippet box-->
-          </div>
-          <!--end of subsection_box - scaleXY-->
-          <div class="subsection_box">
-            <figure id="fig_scale_xy">
-              <figcaption>3D scale...z</figcaption>
-              <div></div>
-           </figure>
-           <div class="code_snippet">
-             <code>
-               .foo {<br>
-               transform: scaleZ(40px);<br>
-              }
-             </code>
-           </div>
-           <!--end of code_snippet box-->
-          </div>
-         <!--end of subsection_box - scaleZ-->
-         <div class="subsection_box">
-           <figure id="fig_scale_zxy">
-             <figcaption>3D scale...zxy</figcaption>
-             <div></div>
-           </figure>
-           <div class="code_snippet">
-              <code>
-               .foo {<br>
-               transform: scale3D(40px, 40px, 40px);<br>
-               }
-             </code>
-            </div>
-            <!--end of code_snippet box-->
-          </div>
-          <!--end of subsection_box - scaleZXY-->
         </div>
-        <!--end of subsection - scale-->
-        <div class="subsection" id="subsec_skew">
-          <h3>skew()</h3>
-          <div class="subsec_intro">
-            <p>... tilts an element to the right or left.</p>
-            <ul>
-              <li>skewX()</li>
-              <li>skewY()</li>
-              <li>skew(x,y)</li>
-            </ul>
-          </div>
-          <!--end of subsection_intro-->
-          <div class="subsection_box">
-            <figure id="fig_no_skew">
-             <figcaption>What we start with...</figcaption>
-              <div></div>
-            </figure>
-          </div><!--end of subsection_box - noskew-->
-          <div class="subsection_box">
-            <figure id="fig_skew_x">
-             <figcaption>skew...X</figcaption>
-              <div></div>
-            </figure>
-            <div class="code_snippet">
-              <code>
-                .foo {<br>
-                  transform: skewX(10px);<br>
-                  }
-              </code>
-            </div>
-            <!--end of code_snippet box-->
-          </div><!--end of subsection_box - skew_x-->
-          <div class="subsection_box">
-            <figure id="fig_skew_y">
-             <figcaption>skew...Y</figcaption>
-              <div></div>
-            </figure>
-            <div class="code_snippet">
-              <code>
-                .foo {<br>
-                  transform: skewY(10px);<br>
-                  }
-              </code>
-            </div>
-            <!--end of code_snippet box-->
-          </div><!--end of subsection_box - skew_y-->
-          <div class="subsection_box">
-            <figure id="fig_skew_xy">
-             <figcaption>skew...XY</figcaption>
-              <div></div>
-            </figure>
-            <div class="code_snippet">
-              <code>
-                .foo {<br>
-                  transform: skew(10px 10px);<br>
-                  }
-              </code>
-            </div>
-            <!--end of code_snippet box-->
-          </div><!--end of subsection_box - skew_xy-->
-        </div>
-        <!--end of subsection - skew-->
-        <div class="subsection" id="subsec_translate">
-          <h3>translate()</h3>
-          <div class="subsec_intro">
-            <p>...moves an element sideways or up and down. </p>
-            <ul>
-              <li>translateX()</li>
-              <li>translateY()</li>
-              <li>translate(x,y)</li>
-              <li>translateZ()</li>
-              <li>translate3d(x, y, z)</li>
-            </ul>
-          </div>
-          <!--end of subsection_intro-->
-          <div class="subsection_box">
-            <figure id="fig_trans_x">
-              <figcaption>Translate...X</figcaption>
-              <div></div>
-            </figure>
-            <div class="code_snippet">
-              <code>
-                .foo {<br>
-                  transform: translateX(20px);<br>
-                  }
-              </code>
-            </div>
-            <!--end of code_snippet box-->
-          </div><!--end of subsection_box - trans_x-->
-          <div class="subsection_box">
-            <figure id="fig_trans_y">
-              <figcaption>Translate...Y</figcaption>
-              <div></div>
-            </figure>
-            <div class="code_snippet">
-              <code>
-                .foo {<br>
-                  transform: translateY(20px);<br>
-                  }
-              </code>
-            </div>
-            <!--end of code_snippet box-->
-          </div><!--end of subsection_box - trans_y-->
-          <div class="subsection_box">
-            <figure id="fig_trans_xy">
-              <figcaption>Translate...XY</figcaption>
-              <div></div>
-            </figure>
-            <div class="code_snippet">
-              <code>
-                .foo {<br>
-                  transform: translate(20px 20px);<br>
-                  }
-              </code>
-            </div>
-            <!--end of code_snippet box-->
-          </div><!--end of subsection_box - trans_xy-->
-          <div class="subsection_box">
-            <figure id="fig_trans_z">
-              <figcaption>Translate...Z</figcaption>
-              <div></div>
-            </figure>
-            <div class="code_snippet">
-              <code>
-                /*z moves element toward viewer (negative value moves away)*/<br>
-                .foo {<br>
-                  transform: translateZ(20px);<br>
-                  }
-              </code>
-            </div>
-            <!--end of code_snippet box-->
-          </div><!--end of subsection_box - trans_z-->
-          <div class="subsection_box">
-            <figure id="fig_trans_z">
-              <figcaption>Translate...XYZ</figcaption>
-              <div></div>
-            </figure>
-            <div class="code_snippet">
-              <code>
-                .foo {<br>
-                  transform: translateXYZ(20px 20px 20px);<br>
-                  }
-              </code>
-            </div>
-            <!--end of code_snippet box-->
-          </div><!--end of subsection_box - trans_xyz-->
-        </div>
-        <!--end of subsection - translate-->
-        <div class="subsection" id="subsec_rotate">
-          <h3>rotate()</h3>
-          <div class="subsec_intro">
-            <p>...rotates element clockwise from current position.</p>
-            <ul>
-              <li>rotate(deg)</li>
-              <li>rotateX()</li>
-              <li>rotateY()</li>
-              <li>rotate3d(x,y,z)</li>
-            </ul>
-          </div>
-          <!--end of subsection_intro-->
-          <div class="subsection_box">
-            <figure id="fig_no_rotate">
-             <figcaption>What we start with...</figcaption>
-              <div></div>
-            </figure>
-          </div><!--end of subsection_box - norotate-->
-          <div class="subsection_box">
-            <figure id="fig_rotate">
-              <figcaption>rotate...</figcaption>
-              <div></div>
-            </figure>
-            <div class="code_snippet">
-              <code>
-                .foo {<br>
-                  transform: rotate(40deg);<br>
-                  }
-              </code>
-            </div>
-            <!--end of code_snippet box-->
-          </div>
-          <!--end of subsection_box - rotate-->
-          <div class="subsection_box">
-            <figure id="fig_rotate_x">
-              <figcaption>rotate...X</figcaption>
-              <div></div>
-            </figure>
-            <div class="code_snippet">
-              <code>
-                .foo {<br>
-                  transform: rotateX(40deg);<br>
-                  }
-              </code>
-            </div>
-            <!--end of code_snippet box-->
-          </div>
-          <!--end of subsection_box - rotate_x-->
-          <div class="subsection_box">
-            <figure id="fig_rotate_y">
-              <figcaption>rotate...Y</figcaption>
-              <div></div>
-            </figure>
-            <div class="code_snippet">
-              <code>
-                .foo {<br>
-                  transform: rotateY(40deg);<br>
-                  }
-              </code>
-            </div>
-            <!--end of code_snippet box-->
-          </div>
-          <!--end of subsection_box - rotate_y-->
-          <div class="subsection_box">
-            <figure id="fig_rotate_3d">
-              <figcaption>rotate...3D</figcaption>
-              <div></div>
-            </figure>
-            <div class="code_snippet">
-              <code>
-                .foo {<br>
-                  transform: rotate3d(40deg 40deg 40px);<br>
-                  }
-              </code>
-            </div>
-            <!--end of code_snippet box-->
-          </div>
-          <!--end of subsection_box - rotate_3d-->
-        <!--end of subsection - rotate-->
-        <div class="subsection" id="subsec_matrix">
-          <h3>matrix()</h3>
-          <div class="subsec_intro">
-            <p>...combines all transforms into one.</p>
-          </div>
-          <!--end of subsection_intro-->
-          <div class="subsection_box">
-            <div class="code_snippet">
-              <p>It is possible to have multiple values on the transform property such as...</p>
-              <code>
-                .element {<br>
-                  transform: translateY(40px) scale(20);<br>
-                  }
-              </code>
-              <p>The matrix property combines all transforms into one BUT it is  not written by hand and instead use <a href="https://meyerweb.com/eric/tools/matrix/" target="_blank">tools</a> to create them.</p>
-              <p>So this...</p>
-              <code>
-                .element {<br>
-                  transform: translateY(40px) scale(20);<br>
-                  }
-              </code>
-              <p>Becomes this...</p>
-              <code>
-                .element {<br>
-                  transform: matrix(0.7071067811865475, 0.7071067811865476, -0.7071067811865476, 0.7071067811865475, -0.7071067811865497, 34.648232278140824);<br>
-                  }
-              </code>
-            </div>
-            <!--end of code_snippet box-->            
-          </div><!--end of subsection_box - matrix-->
-        </div>
-        <!--end of subsection - matrix-->
-        <div class="subsection" id="subsec_perspective">
-          <h3>perspective()</h3>
-          <div class="subsec_intro">
-            <p>...doesn't affect the element itself but instead affects the 3D transforms of the child elements for depth perspectives.</p>
-          </div>
-          <!--end of subsection_intro-->
-          <div class="subsection_box">
-            <div class="code_snippet">
-              <code>
-                .element {<br>
-                transform: perspective 100px, rotate(25deg);<br>
-                }</code>
-            </div>
-          </div>
-        </div>
-        <!--end of subsection - perspective-->
-        <div class="subsection" id="subsec_trans_style">
-          <h3>transform-style...</h3>
-          <div class="subsec_intro">
-            <p>...sets whether children of an element are positioned in the 3D space or are flattened in the plane of the element.</p>
-          </div>
-          <!--end of subsection_intro-->
-          <div class="subsection_box">
-            <div class="code_snippet">
-              <code>
-                .element {<br>
-                transform-style: preserve-3d;<br>
-                }<br>
-                /*otherwise <span class="code_word">transform-style: flat;</span>*/
-              </code>
-            </div>
-          </div>
-        </div>
-        <!--end of subsection - transform_style -->
-      </section>
-      <!--end of section - transforms-->
-      <section id="sec_transitions">
-        <h2>Transitions...</h2>
-        <div class="text_box">
-          <p>CSS transitions allow you to control animation speed and change property values smoothly over a given duration</p>
-          <ul class="sub_nav">
-            <li><a href="#subsec_property">property</a></li>
-            <li><a href="#subsec_delay">delay</a></li>
-            <li><a href="#subsec_duration">duration</a></li>
-            <li><a href="#subsec_timing">timing-function</a></li>
-            <li><a href="#subsec_transition">transition</a></li>
-          </ul>
+        <!--end of subsection_box - scaleXY-->
+        <div class="subsection_box">
+          <figure id="fig_scale_z">
+            <figcaption>3D scale...z</figcaption>
+            <div></div>
+          </figure>
           <div class="code_snippet">
             <code>
-              .element {<br>
-                transform: rotate(25deg);<br>
-                transition: &lt;property&gt; &lt;duration&gt; &lt;timing-function&gt; &lt;delay&gt;<br>
-                }
+              .foo {<br>
+              transform: scaleZ(40px);<br>
+              }
             </code>
           </div>
           <!--end of code_snippet box-->
         </div>
-        <!--end of text_box div for transition intro-->
-        <div class="subsection" id="subsec_property">
-          <h3>transition-property</h3>
-          <div class="subsec_intro">
-            <p>...is the property you want to have the effect on.</p>
+        <!--end of subsection_box - scaleZ-->
+        <div class="subsection_box">
+          <figure id="fig_scale_zxy">
+            <figcaption>3D scale...zxy</figcaption>
+            <div></div>
+          </figure>
+          <div class="code_snippet">
+            <code>
+              .foo {<br>
+              transform: scale3D(40px, 40px, 40px);<br>
+              }
+            </code>
           </div>
-          <!--end of subsection_intro-->
-          <div class="subsection_box">
-            <div class="code_snippet">
-              <code>
-                .foo {<br>
-                color: #000;<br>
-                transition: color 2s ease 4s;<br> 
-                }<br>
-                .foo:hover {<br>
-                color: #fff;<br>
-                }
-              </code>
-              <p>NOTE - &quot;all&quot; can be a property too...but not all elements can be transformed or animated!</p>
-            </div>
-            <!--end of code_snippet box-->
-          </div>
-          <!--end of subsection_box-->
+          <!--end of code_snippet box-->
         </div>
-        <!--end of subsection - property-->
-        <div class="subsection" id="subsec_delay">
-          <h3>transition-delay</h3>
-          <div class="subsec_intro">
-            <p>...specifies a delay (in seconds) for the transition effect. </p>
+        <!--end of subsection_box - scaleZXY-->
+      </div>
+      <!--end of subsection - scale-->
+      <div class="subsection" id="subsec_skew">
+        <h3>skew()</h3>
+        <div class="subsec_intro">
+          <p>... tilts an element to the right or left.</p>
+          <ul>
+            <li>skewX()</li>
+            <li>skewY()</li>
+            <li>skew(x,y)</li>
+          </ul>
+        </div>
+        <!--end of subsection_intro-->
+        <div class="subsection_box">
+          <figure id="fig_no_skew">
+            <figcaption>What we start with...</figcaption>
+            <div></div>
+          </figure>
+        </div>
+        <!--end of subsection_box - noskew-->
+        <div class="subsection_box">
+          <figure id="fig_skew_x">
+            <figcaption>skew...X</figcaption>
+            <div></div>
+          </figure>
+          <div class="code_snippet">
+            <code>
+              .foo {<br>
+              transform: skewX(10px);<br>
+              }
+            </code>
           </div>
-          <!--end of subsection_intro_delay-->
-          <div class="subsection_box">
-            <div class="code_snippet">
-              <code>
-                .foo {<br>
-                color: #000;<br>
-                transition: color 2s ease 4s;<br>
-                transition-delay: 2s;<br> 
-                }<br>
-                .foo:hover {<br>
-                color: #fff;<br>
-                }
-              </code>
-            </div>
-            <!--end of code_snippet box-->
+          <!--end of code_snippet box-->
+        </div>
+        <!--end of subsection_box - skew_x-->
+        <div class="subsection_box">
+          <figure id="fig_skew_y">
+            <figcaption>skew...Y</figcaption>
+            <div></div>
+          </figure>
+          <div class="code_snippet">
+            <code>
+              .foo {<br>
+              transform: skewY(10px);<br>
+              }
+            </code>
           </div>
-          <!--end of subsection_delay-->
+          <!--end of code_snippet box-->
+        </div>
+        <!--end of subsection_box - skew_y-->
+        <div class="subsection_box">
+          <figure id="fig_skew_xy">
+            <figcaption>skew...XY</figcaption>
+            <div></div>
+          </figure>
+          <div class="code_snippet">
+            <code>
+              .foo {<br>
+              transform: skew(10px 10px);<br>
+              }
+            </code>
+          </div>
+          <!--end of code_snippet box-->
+        </div>
+        <!--end of subsection_box - skew_xy-->
+      </div>
+      <!--end of subsection - skew-->
+      <div class="subsection" id="subsec_translate">
+        <h3>translate()</h3>
+        <div class="subsec_intro">
+          <p>...moves an element sideways or up and down. </p>
+          <ul>
+            <li>translateX()</li>
+            <li>translateY()</li>
+            <li>translate(x,y)</li>
+            <li>translateZ()</li>
+            <li>translate3d(x, y, z)</li>
+          </ul>
+        </div>
+        <!--end of subsection_intro-->
+        <div class="subsection_box">
+          <figure id="fig_trans_x">
+            <figcaption>Translate...X</figcaption>
+            <div></div>
+          </figure>
+          <div class="code_snippet">
+            <code>
+              .foo {<br>
+              transform: translateX(20px);<br>
+              }
+            </code>
+          </div>
+          <!--end of code_snippet box-->
+        </div>
+        <!--end of subsection_box - trans_x-->
+        <div class="subsection_box">
+          <figure id="fig_trans_y">
+            <figcaption>Translate...Y</figcaption>
+            <div></div>
+          </figure>
+          <div class="code_snippet">
+            <code>
+              .foo {<br>
+              transform: translateY(20px);<br>
+              }
+            </code>
+          </div>
+          <!--end of code_snippet box-->
+        </div>
+        <!--end of subsection_box - trans_y-->
+        <div class="subsection_box">
+          <figure id="fig_trans_xy">
+            <figcaption>Translate...XY</figcaption>
+            <div></div>
+          </figure>
+          <div class="code_snippet">
+            <code>
+              .foo {<br>
+              transform: translate(20px 20px);<br>
+              }
+            </code>
+          </div>
+          <!--end of code_snippet box-->
+        </div>
+        <!--end of subsection_box - trans_xy-->
+        <div class="subsection_box">
+          <figure id="fig_trans_z">
+            <figcaption>Translate...Z</figcaption>
+            <div></div>
+          </figure>
+          <div class="code_snippet">
+            <code>
+              /*z moves element toward viewer (negative value moves away)*/<br>
+              .foo {<br>
+              transform: translateZ(20px);<br>
+              }
+            </code>
+          </div>
+          <!--end of code_snippet box-->
+        </div>
+        <!--end of subsection_box - trans_z-->
+        <div class="subsection_box">
+          <figure id="fig_trans_xyz">
+            <figcaption>Translate...XYZ</figcaption>
+            <div></div>
+          </figure>
+          <div class="code_snippet">
+            <code>
+              .foo {<br>
+              transform: translateXYZ(20px 20px 20px);<br>
+              }
+            </code>
+          </div>
+          <!--end of code_snippet box-->
+        </div>
+        <!--end of subsection_box - trans_xyz-->
+      </div>
+      <!--end of subsection - translate-->
+      <div class="subsection" id="subsec_rotate">
+        <h3>rotate()</h3>
+        <div class="subsec_intro">
+          <p>...rotates element clockwise from current position.</p>
+          <ul>
+            <li>rotate(deg)</li>
+            <li>rotateX()</li>
+            <li>rotateY()</li>
+            <li>rotate3d(x,y,z)</li>
+          </ul>
+        </div>
+        <!--end of subsection_intro-->
+        <div class="subsection_box">
+          <figure id="fig_no_rotate">
+            <figcaption>What we start with...</figcaption>
+            <div></div>
+          </figure>
+        </div>
+        <!--end of subsection_box - norotate-->
+        <div class="subsection_box">
+          <figure id="fig_rotate">
+            <figcaption>rotate...</figcaption>
+            <div></div>
+          </figure>
+          <div class="code_snippet">
+            <code>
+              .foo {<br>
+              transform: rotate(40deg);<br>
+              }
+            </code>
+          </div>
+          <!--end of code_snippet box-->
+        </div>
+        <!--end of subsection_box - rotate-->
+        <div class="subsection_box">
+          <figure id="fig_rotate_x">
+            <figcaption>rotate...X</figcaption>
+            <div></div>
+          </figure>
+          <div class="code_snippet">
+            <code>
+              .foo {<br>
+              transform: rotateX(40deg);<br>
+              }
+            </code>
+          </div>
+          <!--end of code_snippet box-->
+        </div>
+        <!--end of subsection_box - rotate_x-->
+        <div class="subsection_box">
+          <figure id="fig_rotate_y">
+            <figcaption>rotate...Y</figcaption>
+            <div></div>
+          </figure>
+          <div class="code_snippet">
+            <code>
+              .foo {<br>
+              transform: rotateY(40deg);<br>
+              }
+            </code>
+          </div>
+          <!--end of code_snippet box-->
+        </div>
+        <!--end of subsection_box - rotate_y-->
+        <div class="subsection_box">
+          <figure id="fig_rotate_3d">
+            <figcaption>rotate...3D</figcaption>
+            <div></div>
+          </figure>
+          <div class="code_snippet">
+            <code>
+              .foo {<br>
+              transform: rotate3d(40deg 40deg 40px);<br>
+              }
+            </code>
+          </div>
+          <!--end of code_snippet box-->
+        </div>
+        <!--end of subsection_box - rotate_3d-->
+      </div>
+      <!--end of subsection - rotate-->
+      <div class="subsection" id="subsec_matrix">
+        <h3>matrix()</h3>
+        <div class="subsec_intro">
+          <p>...combines all transforms into one.</p>
+        </div>
+        <!--end of subsection_intro-->
+        <div class="subsection_box">
+          <div class="code_snippet">
+            <p>It is possible to have multiple values on the transform property such as...</p>
+            <code>
+              .element {<br>
+              transform: translateY(40px) scale(20);<br>
+              }
+            </code>
+            <p>The matrix property combines all transforms into one BUT it is not written by hand and instead use <a href="https://meyerweb.com/eric/tools/matrix/" target="_blank">tools</a> to create them.</p>
+            <p>So this...</p>
+            <code>
+              .element {<br>
+              transform: translateY(40px) scale(20);<br>
+              }
+            </code>
+            <p>Becomes this...</p>
+            <code>
+              .element {<br>
+              transform: matrix(0.7071067811865475, 0.7071067811865476, -0.7071067811865476, 0.7071067811865475, -0.7071067811865497, 34.648232278140824);<br>
+              }
+            </code>
+          </div>
+          <!--end of code_snippet box-->
+        </div>
+        <!--end of subsection_box - matrix-->
+      </div>
+      <!--end of subsection - matrix-->
+      <div class="subsection" id="subsec_perspective">
+        <h3>perspective()</h3>
+        <div class="subsec_intro">
+          <p>...doesn't affect the element itself but instead affects the 3D transforms of the child elements for depth perspectives.</p>
+        </div>
+        <!--end of subsection_intro-->
+        <div class="subsection_box">
+          <div class="code_snippet">
+            <code>
+              .element {<br>
+              transform: perspective 100px, rotate(25deg);<br>
+              }</code>
+          </div>
+        </div>
+      </div>
+      <!--end of subsection - perspective-->
+      <div class="subsection" id="subsec_trans_style">
+        <h3>transform-style...</h3>
+        <div class="subsec_intro">
+          <p>...sets whether children of an element are positioned in the 3D space or are flattened in the plane of the element.</p>
+        </div>
+        <!--end of subsection_intro-->
+        <div class="subsection_box">
+          <div class="code_snippet">
+            <code>
+              .element {<br>
+              transform-style: preserve-3d;<br>
+              }<br>
+              /*otherwise <span class="code_word">transform-style: flat;</span>*/
+            </code>
+          </div>
+        </div>
+      </div>
+      <!--end of subsection - transform_style -->
+    </section>
+    <!--end of section - transforms-->
+    <section id="sec_transitions">
+      <h2>Transitions...</h2>
+      <div class="text_box">
+        <p>CSS transitions allow you to control animation speed and change property values smoothly over a given duration</p>
+        <ul class="sub_nav">
+          <li><a href="#subsec_property">property</a></li>
+          <li><a href="#subsec_delay">delay</a></li>
+          <li><a href="#subsec_duration">duration</a></li>
+          <li><a href="#subsec_timing">timing-function</a></li>
+          <li><a href="#subsec_transition">transition</a></li>
+        </ul>
+        <div class="code_snippet">
+          <code>
+            .element {<br>
+            transform: rotate(25deg);<br>
+            transition: &lt;property&gt; &lt;duration&gt; &lt;timing-function&gt; &lt;delay&gt;<br>
+            }
+          </code>
+        </div>
+        <!--end of code_snippet box-->
+      </div>
+      <!--end of text_box div for transition intro-->
+      <div class="subsection" id="subsec_property">
+        <h3>transition-property</h3>
+        <div class="subsec_intro">
+          <p>...is the property you want to have the effect on.</p>
+        </div>
+        <!--end of subsection_intro-->
+        <div class="subsection_box">
+          <div class="code_snippet">
+            <code>
+              .foo {<br>
+              color: #000;<br>
+              transition: color 2s ease 4s;<br>
+              }<br>
+              .foo:hover {<br>
+              color: #fff;<br>
+              }
+            </code>
+            <p>NOTE - &quot;all&quot; can be a property too...but not all elements can be transformed or animated!</p>
+          </div>
+          <!--end of code_snippet box-->
+        </div>
+        <!--end of subsection_box-->
+      </div>
+      <!--end of subsection - property-->
+      <div class="subsection" id="subsec_delay">
+        <h3>transition-delay</h3>
+        <div class="subsec_intro">
+          <p>...specifies a delay (in seconds) for the transition effect. </p>
+        </div>
+        <!--end of subsection_intro_delay-->
+        <div class="subsection_box">
+          <div class="code_snippet">
+            <code>
+              .foo {<br>
+              color: #000;<br>
+              transition: color 2s ease 4s;<br>
+              transition-delay: 2s;<br>
+              }<br>
+              .foo:hover {<br>
+              color: #fff;<br>
+              }
+            </code>
+          </div>
+          <!--end of code_snippet box-->
+        </div>
+        <!--end of subsection_delay-->
         <div class="subsection" id="subsec_duration">
           <h3>transition-duration</h3>
           <div class="subsec_intro">
@@ -544,12 +558,13 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
                 color: #000;<br>
                 transition: color 2s ease 4s;<br>
                 transition-delay: 2s;<br>
-                transition-duration: 2s;<br> 
+                transition-duration: 2s;<br>
                 }
               </code>
             </div>
             <!--end of code_snippet box-->
           </div>
+        </div>
         <!--end of subsection - duration-->
         <div class="subsection" id="subsec_timing">
           <h3>transition-timing-function</h3>
@@ -566,9 +581,9 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
             <div class="code_snippet">
               <code>
                 .foo {<br>
-                  transform: rotate(40deg);<br>
-                  transition-timing-function: ease-in-out; <br>
-                  }
+                transform: rotate(40deg);<br>
+                transition-timing-function: ease-in-out; <br>
+                }
               </code>
             </div>
             <!--end of code_snippet box-->
@@ -579,7 +594,7 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
               <figcaption>ease...</figcaption>
               <p>..a transition effect with a slow start, then fast, then slow end.</p>
               <div></div>
-             </figure>
+            </figure>
           </div>
           <!--end of subsection_box - ease-->
           <div class="subsection_box">
@@ -587,7 +602,7 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
               <figcaption>linear...</figcaption>
               <p>..a transition effect with the same speed from start to end.</p>
               <div></div>
-             </figure>
+            </figure>
           </div>
           <!--end of subsection_box - linear-->
           <div class="subsection_box">
@@ -595,7 +610,7 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
               <figcaption>ease-in...</figcaption>
               <p>..a transition effect with a slow start.</p>
               <div></div>
-             </figure>
+            </figure>
           </div>
           <!--end of subsection_box - ease-in-->
           <div class="subsection_box">
@@ -603,7 +618,7 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
               <figcaption>ease-out...</figcaption>
               <p>..a transition effect with a slow end.</p>
               <div></div>
-             </figure>
+            </figure>
           </div>
           <!--end of subsection_box - ease-out-->
           <div class="subsection_box">
@@ -611,25 +626,17 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
               <figcaption>ease-in-out...</figcaption>
               <p>..a transition effect with a slow start and end.</p>
               <div></div>
-             </figure>
+            </figure>
           </div>
           <!--end of subsection_box - ease-in-out-->
-          <div class="subsection_box">
-            <figure id="fig_ease_in">
-              <figcaption>ease-in...</figcaption>
-              <p>..a transition effect with a slow start.</p>
-              <div></div>
-             </figure>
-          </div>
-          <!--end of subsection_box - cubic-bez-->
           <div class="subsection_box">
             <figure id="fig_cube_bez">
               <figcaption>cubic-bezier(n,n,n,n)</figcaption>
               <p>..define your own values in a cubic-bezier function.</p>
               <div></div>
-             </figure>
+            </figure>
           </div>
-          <!--end of subsection_box - ease-in-->
+          <!--end of subsection_box - cubic-bez-->
         </div>
         <!--end of subsection - timing-->
         <div class="subsection" id="subsec_transition">
@@ -641,51 +648,53 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
           <div class="code_snippet">
             <code>
               .element {<br>
-                transition: &lt;property&gt; &lt;duration&gt; &lt;timing-function&gt; &lt;delay&gt;;<br>
-                }
+              transition: &lt;property&gt; &lt;duration&gt; &lt;timing-function&gt; &lt;delay&gt;;<br>
+              }
             </code>
             <p>You can also add multiples seperated by comma:</p>
             <code>
               .element {<br>
-                transition: width 2s, height 2s, transform 2s;<br>
-                }
+              transition: width 2s, height 2s, transform 2s;<br>
+              }
             </code>
           </div>
           <!--end of code_snippet box-->
         </div>
         <!--end of subsection - transition-->
-      </section>
-      <!--end of section - transitions-->
-    </main>
-    <aside>
-      <p>This project is one in my expanding collection of CSS cheat sheets that I've created on my journey towards becoming a frontend developer.</p>
-      <p>You might also like to see my other creations (there is some sort of method to the madness):</p>
-      <ul>
-        <li><a href="https://codepen.io/mazonthemoon/full/GRpRYvq" target="_blank">Cascade &amp; Inheritance</a></li>
-        <li><a href="https://codepen.io/mazonthemoon/full/KKdgeoJ" target="_blank">Box Model</a></li>
-        <li><a href="https://codepen.io/mazonthemoon/full/zYGbdJK" target="_blank">Units &amp; Values</a></li>
-        <li><a href="https://codepen.io/mazonthemoon/full/dyGJRvx" target="_blank">Selectors</a></li>
-        <li><a href="https://codepen.io/mazonthemoon/full/wvGzrOP" target="_blank">Display &amp; Positioning</a></li>
-        <li><a href="https://codepen.io/mazonthemoon/full/JjXVMrb" target="_blank">Flexbox</a></li>
-        <li><a href="https://codepen.io/mazonthemoon/full/bGdjByy" target="_blank">Grid</a></li>
-        <li><a href="https://codepen.io/mazonthemoon/full/KKgWeoO" target="_blank">Backgrounds</a></li>
-        <li><a href="https://codepen.io/mazonthemoon/full/xxRjbGR" target="_blank">Text &amp; Fonts</a></li>
-        <li><a href="https://codepen.io/mazonthemoon/full/poRKbZv" target="_blank">Lists &amp; Links</a></li>
-        <li><a href="https://codepen.io/mazonthemoon/full/xxqrdrV" target="_blank">Images</a></li>
-      </ul>
-    </aside>
-    <footer>
-      <p>I am <abbr title="Mary Ronan">MazontheMoon</abbr></p>
-      <img id="profile_pic" alt="A black and white photo of the author who is female with dark hair and wearing glasses" width="150px" src="https://github.com/MazontheMoon/css_cheatsheet_transitions_transforms/blob/main/assets/mugshot.jpg?raw=true">
-      <div class="social_media_box">
-        <ul>
-          <li><a href="https://www.linkedin.com/in/mary-ronan/" target="_blank"> <span class="fab fa-linkedin"> </span></a></li>
-          <li><a href="https://github.com/MazontheMoon" target="_blank"> <span class="fab fa-github-square"> </span></a></li>
-          <li><a href="https://codepen.io/mazonthemoon/#" target="_blank"> <span class="fab fa-codepen"> </span></a></li>
-          <li><a href="https://mazcodesonthemoon.wordpress.com/2020/10/12/teaching-myself-to-code-css/" target="_blank"> <span class="fab fa-wordpress"> </span></a></li>
-        </ul>
       </div>
-      <p>A <span class="fab fa-html5"></span> and <span class="fab fa-css3"></span> teach-myself-coding project!</p>
-    </footer>
-  </body>
+    </section>
+    <!--end of section - transitions-->
+  </main>
+  <aside>
+    <p>This project is one in my expanding collection of CSS cheat sheets that I've created on my journey towards becoming a frontend developer.</p>
+    <p>You might also like to see my other creations (there is some sort of method to the madness):</p>
+    <ul>
+      <li><a href="https://codepen.io/mazonthemoon/full/GRpRYvq" target="_blank">Cascade &amp; Inheritance</a></li>
+      <li><a href="https://codepen.io/mazonthemoon/full/KKdgeoJ" target="_blank">Box Model</a></li>
+      <li><a href="https://codepen.io/mazonthemoon/full/zYGbdJK" target="_blank">Units &amp; Values</a></li>
+      <li><a href="https://codepen.io/mazonthemoon/full/dyGJRvx" target="_blank">Selectors</a></li>
+      <li><a href="https://codepen.io/mazonthemoon/full/wvGzrOP" target="_blank">Display &amp; Positioning</a></li>
+      <li><a href="https://codepen.io/mazonthemoon/full/JjXVMrb" target="_blank">Flexbox</a></li>
+      <li><a href="https://codepen.io/mazonthemoon/full/bGdjByy" target="_blank">Grid</a></li>
+      <li><a href="https://codepen.io/mazonthemoon/full/KKgWeoO" target="_blank">Backgrounds</a></li>
+      <li><a href="https://codepen.io/mazonthemoon/full/xxRjbGR" target="_blank">Text &amp; Fonts</a></li>
+      <li><a href="https://codepen.io/mazonthemoon/full/poRKbZv" target="_blank">Lists &amp; Links</a></li>
+      <li><a href="https://codepen.io/mazonthemoon/full/xxqrdrV" target="_blank">Images</a></li>
+    </ul>
+  </aside>
+  <footer>
+    <p>I am <abbr title="Mary Ronan">MazontheMoon</abbr></p>
+    <img id="profile_pic" alt="A black and white photo of the author who is female with dark hair and wearing glasses" width="150px" src="https://github.com/MazontheMoon/css_cheatsheet_transitions_transforms/blob/main/assets/mugshot.jpg?raw=true">
+    <div class="social_media_box">
+      <ul>
+        <li><a href="https://www.linkedin.com/in/mary-ronan/" target="_blank"> <span class="fab fa-linkedin"> </span></a></li>
+        <li><a href="https://github.com/MazontheMoon" target="_blank"> <span class="fab fa-github-square"> </span></a></li>
+        <li><a href="https://codepen.io/mazonthemoon/#" target="_blank"> <span class="fab fa-codepen"> </span></a></li>
+        <li><a href="https://mazcodesonthemoon.wordpress.com/2020/10/12/teaching-myself-to-code-css/" target="_blank"> <span class="fab fa-wordpress"> </span></a></li>
+      </ul>
+    </div>
+    <p>A <span class="fab fa-html5"></span> and <span class="fab fa-css3"></span> teach-myself-coding project!</p>
+  </footer>
+</body>
+</html>
     
