@@ -13,6 +13,8 @@ Page variables
   --col_light: #FFFAFF;
 
   /*fonts*/
+  --font_header: 'Lobster', cursive;
+  --font_main: 'Roboto', sans-serif;
   
   /*margins and paddings*/
 
