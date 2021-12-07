@@ -108,8 +108,21 @@ nav ul {
 
 nav ul li {
   flex: 1;
+  margin: 0 1rem;
+  padding: 0.6rem 1.8rem;
   text-align: center;
+  box-shadow: 1px 1px 5px #000;
+  border-radius: 1rem;
+  color: var(--col_light);
+  font-size: clamp(0.8rem, 2vw, 2.8rem);
+  font-weight: bold;
+  text-shadow: 1px 1px 2px var(--col_dark);
 }
+
+nav ul li:hover {
+  box-shadow: 1px 1px 20px #000;
+}
+
 /*==========================
 Main and Section containers
 ===========================*/
