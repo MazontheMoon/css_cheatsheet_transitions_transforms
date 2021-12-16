@@ -66,7 +66,7 @@ body {
     "aside aside aside"
     "footer footer footer";
   grid-gap: 0.6rem;
-  margin: 1rem;
+  margin: 1rem 0;
   background-color: var(--col_main);
   background-image: linear-gradient(
     to bottom,
@@ -84,13 +84,16 @@ Header
 ======*/
 body > header {
   grid-area: header;
+  background-image: linear-gradient(to bottom, #6930c3, #888, #6930c3);
 }
 
 h1 {
   color: #fffaff;
   text-align: center;
   font-family: var(--font_header);
-  font-size: clamp(2.4rem, 3.2vw, 5rem);
+  font-size: clamp(1.6rem, 2.8rem, 3.2rem);
+  letter-spacing: 3px;
+  font-kerning: none;
   text-shadow: 0px 0px 10px #000;
 }
 /*=======
@@ -108,17 +111,52 @@ nav ul {
 
 nav ul li {
   flex: 1;
+  margin: 0.5rem 1rem;
+  padding: 0.6rem 1.8rem;
   text-align: center;
+  box-shadow: 1px 1px 5px #000;
+  border-radius: 1rem;
+  color: var(--col_light);
+  font-size: clamp(1rem, 2.4rem, 2.8rem);
+  font-weight: bold;
+  text-shadow: 1px 1px 2px var(--col_dark);
 }
+
+nav ul li:hover {
+  box-shadow: 1px 1px 20px #000;
+}
+
 /*==========================
 Main and Section containers
 ===========================*/
 main {
   grid-area: main;
+  margin: 0 0.4rem;
   padding: 0.6rem;
   border: 1px solid var(--col_dark);
   box-shadow: 1px 1px 4px var(--col_dark), -1px -1px 4px var(--col_dark);
   background-color: var(--col_light);
+}
+
+section {
+}
+
+section h2 {
+  border-bottom: var(--col_highlight) 0.6 solid;
+  color: var(--col_dark);
+  font-size: clamp(1rem, 1.8rem, 2.2rem);
+}
+
+section p {
+  color: var(--col_dark);
+  font-size: clamp(0.8rem, 1.2rem, 1.6rem);
+  line-height: 1.5;
+}
+
+section .subsection {
+  margin: 0 0.6rem;
+  padding: 1rem;
+  border-left: 0.6rem solid var(--col_highlight);
 }
 
 /*=====
