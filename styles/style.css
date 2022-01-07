@@ -124,7 +124,7 @@ nav ul li {
   text-shadow: 1px 1px 2px var(--col_dark);
 }
 
-nav ul li:hover {
+nav ul li:hover, nav ul li:active {
   box-shadow: 1px 1px 20px #000;
 }
 
@@ -141,12 +141,41 @@ main {
 }
 
 section {
+  margin: 0.2rem;
+  padding: 0.4rem;
 }
 
-section h2 {
-  border-bottom: var(--col_highlight) 0.6 solid;
+h2 {
+  margin-bottom: 0.4rem;
+  border-bottom: var(--col_highlight) 0.6rem solid;
   color: var(--col_dark);
   font-size: clamp(1rem, 1.8rem, 2.2rem);
+}
+
+.sub_nav {
+  margin: 0.2rem 0;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  background-color: #6930c3;
+}
+
+.sub_nav li {
+  margin: 0.2rem;
+  color: var(--col_light);
+}
+
+.sub_nav li a {
+  color: inherit;
+  font-size: clamp(0.8rem, 1.2rem, 1.8rem);
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+/*button actions for sub-menu*/
+.sub_nav li:hover, .sub_nav li:hover {
+ text-decoration: underline;
+ text-decoration-color: inherit;
+  
 }
 
 section p {
@@ -252,7 +281,7 @@ Accessibility
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-
+}
 /*======================
     Ye Olde Time Print View
     ========================*/
