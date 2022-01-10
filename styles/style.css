@@ -87,16 +87,14 @@ body > header {
 
 h1 {
   padding: 0 0.3rem;
-  color:  #6930c3;
+  color: #6930c3;
   border-bottom: dotted 3px #000;
   text-align: center;
   font-family: var(--font_main);
   font-size: clamp(1.2rem, 2rem, 2.6rem);
   letter-spacing: 3px;
   font-kerning: none;
-  text-shadow: 0px 0px 10px #000,
-    1px 1px 2px #000,
-    -1px -1px 2px #000;
+  text-shadow: 0px 0px 10px #000, 1px 1px 2px #000, -1px -1px 2px #000;
 }
 /*=======
 Nav Menu
@@ -124,7 +122,8 @@ nav ul li {
   text-shadow: 1px 1px 2px var(--col_dark);
 }
 
-nav ul li:hover, nav ul li:active {
+nav ul li:hover,
+nav ul li:active {
   box-shadow: 1px 1px 20px #000;
 }
 
@@ -147,21 +146,20 @@ section {
 
 h2 {
   margin-block-end: 0.4rem;
-  border-block-end: var(--col_highlight) 0.6rem solid;
+  border-block-end: var(--col_main) 0.6rem solid;
   color: var(--col_dark);
   font-size: clamp(1rem, 1.8rem, 2.2rem);
 }
 
 .sub_nav {
   margin: 0.2rem 0;
-  padding: 0.6rem;
-  border-radius: 1rem;
-  background-color: #6930c3;
 }
 
 .sub_nav li {
   margin: 0.2rem;
-  color: var(--col_light);
+  padding: 0.6rem;
+  border-radius: 1rem;
+  border: solid 0.2rem var(--col_main);
 }
 
 .sub_nav li a {
@@ -172,10 +170,10 @@ h2 {
 }
 
 /*button actions for sub-menu*/
-.sub_nav li:hover, .sub_nav li:hover {
- text-decoration: underline;
- text-decoration-color: inherit;
-  
+.sub_nav li:hover,
+.sub_nav li:hover {
+  background-color: var(--col_main);
+  color: var(--col_light);
 }
 
 section p {
@@ -185,10 +183,27 @@ section p {
 }
 
 section .subsection {
-  margin: 0 0.6rem;
-  padding: 1rem;
-  border-left: 0.6rem solid var(--col_highlight);
+  margin: 0;
+  padding: 0.4rem;
+  border-left: 0.2rem solid var(--col_highlight);
 }
+
+h3 {
+  margin-block-end: 0.2rem;
+  color: var(--col_highlight);
+  text-shadow: 1px 1px 2px #000;
+  font-size: clamp(0.8rem, 1.2rem, 1.8rem);
+}
+/*button actions for sub-sub-menu*/
+.subsec_intro ul li {
+  margin: 0.2rem;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  border: solid 0.2rem var(--col_highlight);
+}
+/*=============================
+Code snippets and example boxes
+==============================*/
 
 /*=====
 Sidebar
@@ -282,7 +297,7 @@ Accessibility
     scroll-behavior: auto !important;
   }
 }
-/*======================
+/*=========================
     Ye Olde Time Print View
     ========================*/
 @media print {
