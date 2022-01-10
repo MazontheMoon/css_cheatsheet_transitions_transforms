@@ -146,8 +146,8 @@ section {
 }
 
 h2 {
-  margin-bottom: 0.4rem;
-  border-bottom: var(--col_highlight) 0.6rem solid;
+  margin-block-end: 0.4rem;
+  border-block-end: var(--col_highlight) 0.6rem solid;
   color: var(--col_dark);
   font-size: clamp(1rem, 1.8rem, 2.2rem);
 }
