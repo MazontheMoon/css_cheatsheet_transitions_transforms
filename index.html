@@ -89,11 +89,11 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="subsec_intro">
           <p>...affects the size of the element.</p>
           <ul>
-            <li>scale(x,y)</li>
-            <li>scaleX()</li>
-            <li>scaleY()</li>
-            <li>scaleZ(z)</li>
-            <li>scale3d(x,y,z)</li>
+            <li><a href="#">scale(x,y)</a></li>
+            <li><a href="#">scaleX()</a></li>
+            <li><a href="#">scaleY()</a></li>
+            <li><a href="#">scaleZ(z)</a></li>
+            <li><a href="#">scale3d(x,y,z)</a></li>
           </ul>
         </div>
         <!--end of subsection_intro-->
@@ -186,9 +186,9 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="subsec_intro">
           <p>... tilts an element to the right or left.</p>
           <ul>
-            <li>skewX()</li>
-            <li>skewY()</li>
-            <li>skew(x,y)</li>
+            <li><a href="#">skewX()</a></li>
+            <li><a href="#">skewY()</a></li>
+            <li><a href="#">skew(x,y)</a></li>
           </ul>
         </div>
         <!--end of subsection_intro-->
@@ -251,11 +251,11 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="subsec_intro">
           <p>...moves an element sideways or up and down. </p>
           <ul>
-            <li>translateX()</li>
-            <li>translateY()</li>
-            <li>translate(x,y)</li>
-            <li>translateZ()</li>
-            <li>translate3d(x, y, z)</li>
+            <li><a href="#">translateX()</a></li>
+            <li><a href="#">translateY()</a></li>
+            <li><a href="#">translate(x,y)</a></li>
+            <li><a href="#">translateZ()</a></li>
+            <li><a href="#">translate3d(x, y, z)</a></li>
           </ul>
         </div>
         <!--end of subsection_intro-->
@@ -342,10 +342,10 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="subsec_intro">
           <p>...rotates element clockwise from current position.</p>
           <ul>
-            <li>rotate(deg)</li>
-            <li>rotateX()</li>
-            <li>rotateY()</li>
-            <li>rotate3d(x,y,z)</li>
+            <li><a href="#">rotate(deg)</a></li>
+            <li><a href="#">rotateX()</a></li>
+            <li><a href="#">rotateY()</a></li>
+            <li><a href="#">rotate3d(x,y,z)</a></li>
           </ul>
         </div>
         <!--end of subsection_intro-->
@@ -557,122 +557,122 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <!--end of subsection_box-->
       </div>
       <!--end of subsection_delay-->
-        <div class="subsection" id="subsec_duration">
-          <h3>transition-duration</h3>
-          <div class="subsec_intro">
-            <p>...specifies the duration (in seconds or milliseconds) for the transition effect</p>
-          </div>
-          <!--end of subsection_intro_duration-->
-          <div class="subsection_box">
-            <div class="code_snippet">
-              <code>
-                .foo {<br>
-                color: #000;<br>
-                transition: color 2s ease 4s;<br>
-                transition-delay: 2s;<br>
-                transition-duration: 2s;<br>
-                }
-              </code>
-            </div>
-            <!--end of code_snippet box-->
-          </div>
+      <div class="subsection" id="subsec_duration">
+        <h3>transition-duration</h3>
+        <div class="subsec_intro">
+          <p>...specifies the duration (in seconds or milliseconds) for the transition effect</p>
         </div>
-        <!--end of subsection - duration-->
-        <div class="subsection" id="subsec_timing">
-          <h3>transition-timing-function</h3>
-          <div class="subsec_intro">
-            <p>...specifies the speed curve of the transition effect.</p>
-            <ul>
-              <li>ease(default)</li>
-              <li>linear</li>
-              <li>ease-in</li>
-              <li>ease-out</li>
-              <li>ease-in-out</li>
-              <li>cubic-bezier(n,n,n,n)</li>
-            </ul>
-            <div class="code_snippet">
-              <code>
-                .foo {<br>
-                transform: rotate(40deg);<br>
-                transition-timing-function: ease-in-out; <br>
-                }
-              </code>
-            </div>
-            <!--end of code_snippet box-->
-          </div>
-          <!--end of subsection_intro-->
-          <div class="subsection_box">
-            <figure id="fig_ease">
-              <figcaption>ease...</figcaption>
-              <p>..a transition effect with a slow start, then fast, then slow end.</p>
-              <div></div>
-            </figure>
-          </div>
-          <!--end of subsection_box - ease-->
-          <div class="subsection_box">
-            <figure id="fig_linear">
-              <figcaption>linear...</figcaption>
-              <p>..a transition effect with the same speed from start to end.</p>
-              <div></div>
-            </figure>
-          </div>
-          <!--end of subsection_box - linear-->
-          <div class="subsection_box">
-            <figure id="fig_ease_in">
-              <figcaption>ease-in...</figcaption>
-              <p>..a transition effect with a slow start.</p>
-              <div></div>
-            </figure>
-          </div>
-          <!--end of subsection_box - ease-in-->
-          <div class="subsection_box">
-            <figure id="fig_ease_out">
-              <figcaption>ease-out...</figcaption>
-              <p>..a transition effect with a slow end.</p>
-              <div></div>
-            </figure>
-          </div>
-          <!--end of subsection_box - ease-out-->
-          <div class="subsection_box">
-            <figure id="fig_ease_in_out">
-              <figcaption>ease-in-out...</figcaption>
-              <p>..a transition effect with a slow start and end.</p>
-              <div></div>
-            </figure>
-          </div>
-          <!--end of subsection_box - ease-in-out-->
-          <div class="subsection_box">
-            <figure id="fig_cube_bez">
-              <figcaption>cubic-bezier(n,n,n,n)</figcaption>
-              <p>..define your own values in a cubic-bezier function.</p>
-              <div></div>
-            </figure>
-          </div>
-          <!--end of subsection_box - cubic-bez-->
-        </div>
-        <!--end of subsection - timing-->
-        <div class="subsection" id="subsec_transition">
-          <h3>transition</h3>
-          <div class="subsec_intro">
-            <p>...is the shorthand for transition-property transition-duration transition-timing-function and transition-delay.</p>
-          </div>
-          <!--end of subsection_intro-->
+        <!--end of subsection_intro_duration-->
+        <div class="subsection_box">
           <div class="code_snippet">
             <code>
-              .element {<br>
-              transition: &lt;property&gt; &lt;duration&gt; &lt;timing-function&gt; &lt;delay&gt;;<br>
-              }
-            </code>
-            <p>You can also add multiples seperated by comma:</p>
-            <code>
-              .element {<br>
-              transition: width 2s, height 2s, transform 2s;<br>
+              .foo {<br>
+              color: #000;<br>
+              transition: color 2s ease 4s;<br>
+              transition-delay: 2s;<br>
+              transition-duration: 2s;<br>
               }
             </code>
           </div>
           <!--end of code_snippet box-->
         </div>
-        <!--end of subsection - transition-->
+      </div>
+      <!--end of subsection - duration-->
+      <div class="subsection" id="subsec_timing">
+        <h3>transition-timing-function</h3>
+        <div class="subsec_intro">
+          <p>...specifies the speed curve of the transition effect.</p>
+          <ul>
+            <li><a href="#">ease(default)</a></li>
+            <li><a href="#">linear</a></li>
+            <li><a href="#">ease-in</a></li>
+            <li><a href="#">ease-out</a></li>
+            <li><a href="#">ease-in-out</a></li>
+            <li><a href="#">cubic-bezier(n,n,n,n)</a></li>
+          </ul>
+          <div class="code_snippet">
+            <code>
+              .foo {<br>
+              transform: rotate(40deg);<br>
+              transition-timing-function: ease-in-out; <br>
+              }
+            </code>
+          </div>
+          <!--end of code_snippet box-->
+        </div>
+        <!--end of subsection_intro-->
+        <div class="subsection_box">
+          <figure id="fig_ease">
+            <figcaption>ease...</figcaption>
+            <p>..a transition effect with a slow start, then fast, then slow end.</p>
+            <div></div>
+          </figure>
+        </div>
+        <!--end of subsection_box - ease-->
+        <div class="subsection_box">
+          <figure id="fig_linear">
+            <figcaption>linear...</figcaption>
+            <p>..a transition effect with the same speed from start to end.</p>
+            <div></div>
+          </figure>
+        </div>
+        <!--end of subsection_box - linear-->
+        <div class="subsection_box">
+          <figure id="fig_ease_in">
+            <figcaption>ease-in...</figcaption>
+            <p>..a transition effect with a slow start.</p>
+            <div></div>
+          </figure>
+        </div>
+        <!--end of subsection_box - ease-in-->
+        <div class="subsection_box">
+          <figure id="fig_ease_out">
+            <figcaption>ease-out...</figcaption>
+            <p>..a transition effect with a slow end.</p>
+            <div></div>
+          </figure>
+        </div>
+        <!--end of subsection_box - ease-out-->
+        <div class="subsection_box">
+          <figure id="fig_ease_in_out">
+            <figcaption>ease-in-out...</figcaption>
+            <p>..a transition effect with a slow start and end.</p>
+            <div></div>
+          </figure>
+        </div>
+        <!--end of subsection_box - ease-in-out-->
+        <div class="subsection_box">
+          <figure id="fig_cube_bez">
+            <figcaption>cubic-bezier(n,n,n,n)</figcaption>
+            <p>..define your own values in a cubic-bezier function.</p>
+            <div></div>
+          </figure>
+        </div>
+        <!--end of subsection_box - cubic-bez-->
+      </div>
+      <!--end of subsection - timing-->
+      <div class="subsection" id="subsec_transition">
+        <h3>transition</h3>
+        <div class="subsec_intro">
+          <p>...is the shorthand for transition-property transition-duration transition-timing-function and transition-delay.</p>
+        </div>
+        <!--end of subsection_intro-->
+        <div class="code_snippet">
+          <code>
+            .element {<br>
+            transition: &lt;property&gt; &lt;duration&gt; &lt;timing-function&gt; &lt;delay&gt;;<br>
+            }
+          </code>
+          <p>You can also add multiples seperated by comma:</p>
+          <code>
+            .element {<br>
+            transition: width 2s, height 2s, transform 2s;<br>
+            }
+          </code>
+        </div>
+        <!--end of code_snippet box-->
+      </div>
+      <!--end of subsection - transition-->
       </div>
     </section>
     <!--end of section - transitions-->
