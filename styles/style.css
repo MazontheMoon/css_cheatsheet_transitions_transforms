@@ -204,7 +204,15 @@ h3 {
 /*=============================
 Code snippets and example boxes
 ==============================*/
-
+code {
+  display: inline-block;
+  margin: 1rem 0.4rem;
+  padding: 0.6rem;
+  border: dashed 2px black;
+  background-clip: content;
+  background-color: grey;
+  line-height: 1.5;
+}
 /*=====
 Sidebar
 ======*/
