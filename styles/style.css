@@ -163,7 +163,7 @@ h2 {
 }
 
 .sub_nav li a {
-  color: inherit;
+  color: var(--col_dark);
   font-size: clamp(0.8rem, 1.2rem, 1.8rem);
   text-decoration: none;
   line-height: 1.5;
@@ -173,7 +173,6 @@ h2 {
 .sub_nav li:hover,
 .sub_nav li:hover {
   background-color: var(--col_main);
-  color: var(--col_light);
 }
 
 section p {
@@ -194,6 +193,13 @@ h3 {
   text-shadow: 1px 1px 2px #000;
   font-size: clamp(0.8rem, 1.2rem, 1.8rem);
 }
+
+.subsec_intro ul li a {
+  color: var(--col_dark);
+  font-size: clamp(0.8rem, 1.2rem, 1.8rem);
+  text-decoration: none;
+  line-height: 1.5;
+}
 /*button actions for sub-sub-menu*/
 .subsec_intro ul li {
   margin: 0.2rem;
@@ -201,11 +207,17 @@ h3 {
   border-radius: 1rem;
   border: solid 0.2rem var(--col_highlight);
 }
+
+.subsec_intro ul li:hover,
+.subsec_intro ul li:hover {
+  background-color: var(--col_highlight);
+}
 /*=============================
 Code snippets and example boxes
 ==============================*/
 code {
   display: inline-block;
+  width: 100%;
   margin: 1rem 0.4rem;
   padding: 0.6rem;
   border: dashed 2px black;
