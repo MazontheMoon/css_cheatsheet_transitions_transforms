@@ -103,27 +103,33 @@ nav {
   grid-area: nav;
 }
 
-nav ul {
+#main_nav {
   display: flex;
   flex-flow: row wrap;
   padding: 0.6rem;
 }
 
-nav ul li {
+#main_nav li {
   flex: 1;
   margin: 0.5rem 1rem;
   padding: 0.6rem 1.8rem;
-  text-align: center;
   box-shadow: 1px 1px 5px #000;
   border-radius: 1rem;
+}
+
+#main_nav li a {
+  display: inline-block;
+  width: 100%;
   color: var(--col_light);
+  text-align: center;
+  text-decoration: none;
   font-size: clamp(0.8rem, 1.4rem, 2rem);
   font-weight: bold;
   text-shadow: 1px 1px 2px var(--col_dark);
 }
 
-nav ul li:hover,
-nav ul li:active {
+#main_nav li:hover,
+#main_nav li:active {
   box-shadow: 1px 1px 20px #000;
 }
 
@@ -152,7 +158,7 @@ h2 {
 }
 
 .sub_nav {
-  margin: 0.2rem 0;
+  margin: 0.4rem 0;
 }
 
 .sub_nav li {
@@ -163,6 +169,8 @@ h2 {
 }
 
 .sub_nav li a {
+  display: inline-block;
+  width: 100%;
   color: var(--col_dark);
   font-size: clamp(0.8rem, 1.2rem, 1.8rem);
   text-decoration: none;
@@ -195,6 +203,8 @@ h3 {
 }
 
 .subsec_intro ul li a {
+  display: inline-block;
+  width: 100%;
   color: var(--col_dark);
   font-size: clamp(0.8rem, 1.2rem, 1.8rem);
   text-decoration: none;
@@ -230,8 +240,39 @@ Sidebar
 ======*/
 aside {
   grid-area: aside;
+  margin: 0.6rem 1rem;
+  padding: 0.4rem;
+  background-color: var(--col_light);
+  border: 0.4rem solid #000;
 }
 
+aside p {
+  padding: 0.4rem;
+  line-height: 1.5;
+}
+
+#cheatsheetlist {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+#cheatsheetlist li {
+  margin: 0.2rem;
+  padding: 0.4rem;
+  border-inline-start: solid 0.4rem var(--col_main);
+}
+
+#cheatsheetlist li a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+#cheatsheetlist li:is(:focus, :hover) {
+  background-color: var(--col_main);
+  color: var(--col_light);
+}
 /*=====
 Footer
 =======*/
