@@ -49,7 +49,7 @@ body * {
   font-family: Verdana, sans-serif;
 }
 
-li {
+:where(ul, ol) {
   list-style: none;
 }
 
