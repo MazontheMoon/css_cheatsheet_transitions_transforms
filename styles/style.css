@@ -280,6 +280,51 @@ footer {
   grid-area: footer;
 }
 
+#about_me {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about_me p {
+  flex: 1;
+  padding-inline-start: 0.4rem;
+  text-align: end;
+  color: var(--col_light);
+}
+
+#about_me p abbr {
+  color: var(--col_main);
+  font-weight: bold;
+}
+
+#about_me figure {
+  padding: 0 1rem;
+}
+#social_links {
+  flex: 1;
+  align-self: flex-start;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+#social_links li {
+}
+
+#social_links li a {
+  display: inline-block;
+  width: 100%;
+  color: var(--col_main);
+  text-shadow: 1px 1px 2px #000;
+  font-size: 1.6rem;
+}
+
+#about_page {
+  text-align: center;
+  color: var(--col_light);
+}
 /*================
 The little touches
 =================*/
