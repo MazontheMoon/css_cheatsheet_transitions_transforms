@@ -295,13 +295,13 @@ footer {
 }
 
 #about_me p abbr {
-  color: var(--col_main);
   font-weight: bold;
 }
 
 #about_me figure {
   padding: 0 1rem;
 }
+
 #social_links {
   flex: 1;
   align-self: flex-start;
@@ -310,15 +310,18 @@ footer {
   justify-content: space-between;
 }
 
-#social_links li {
-}
-
-#social_links li a {
+#social_links .social a {
   display: inline-block;
   width: 100%;
-  color: var(--col_main);
+  color: var(--col_light);
   text-shadow: 1px 1px 2px #000;
   font-size: 1.6rem;
+}
+
+#social_links .social a:link,
+#social_links .social a:hover,
+#social_links .social a:active {
+  color: var(--col_highlight);
 }
 
 #about_page {
