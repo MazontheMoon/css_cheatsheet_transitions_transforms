@@ -347,35 +347,40 @@ The little touches
   color: var(--col_main);
 }
 
-/*in case of image not found
-  img {
-    position: relative;
-    display: inline-block;
-  }
-  img:after {
-    display: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 5px;
-    border: 1px dashed slategrey;
-    background-color: lightgrey;
-    z-index: 1;
-    font-family: verdana;
-    font-size: 0.8rem;
-    content: "" attr(alt) " was not found";
-  }
-in case of image not found*/
+/*in case of image not found*/
+img {
+  position: relative;
+  display: inline-block;
+}
+
+img:after {
+  display: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  border: 1px dashed slategrey;
+  background-color: lightgrey;
+  z-index: 1;
+  font-family: verdana;
+  font-size: 0.8rem;
+  content: "" attr(alt) " was not found";
+}
 
 /*================
 Responsivesnness
 ==================*/
-/*
 @media only screen and (min-width: 1024px) {
-
+  body {
+    grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "main main aside"
+      "main main aside"
+      "footer footer footer";
+  }
 }
-*/
 
 /*=============
 Accessibility
