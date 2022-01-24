@@ -235,10 +235,21 @@ code {
   background-color: grey;
   line-height: 1.5;
 }
+
+figure {
+  margin: 0.3rem 0;
+  background-color: var(--col_highlight);
+  border: dashed 2px #000;
+}
+
+figcaption {
+  padding: 0.3rem;
+}
 /*=====
 Sidebar
 ======*/
 aside {
+  position: relative;
   grid-area: aside;
   margin: 0.6rem 1rem;
   padding: 0.4rem;
@@ -252,6 +263,8 @@ aside p {
 }
 
 #cheatsheetlist {
+  position: sticky;
+  top: 0;
   display: flex;
   flex-flow: column wrap;
 }
