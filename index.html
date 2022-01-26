@@ -89,11 +89,11 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="subsec_intro">
           <p>...affects the size of the element.</p>
           <ul>
-            <li><a href="#">scale(x,y)</a></li>
-            <li><a href="#">scaleX()</a></li>
-            <li><a href="#">scaleY()</a></li>
-            <li><a href="#">scaleZ(z)</a></li>
-            <li><a href="#">scale3d(x,y,z)</a></li>
+            <li><a href="#fig_scale_xy">scale(x,y)</a></li>
+            <li><a href="#fig_scale_x">scaleX()</a></li>
+            <li><a href="#fig_scale_y">scaleY()</a></li>
+            <li><a href="#fig_scale_z">scaleZ(z)</a></li>
+            <li><a href="#fig_scale_xyz">scale3d(x,y,z)</a></li>
           </ul>
         </div>
         <!--end of subsection_intro-->
@@ -110,13 +110,13 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
           <figure id="fig_scale_x">
             <figcaption>2D scale...x</figcaption>
             <div class="example_fig_box">
-              <div class="example_fig"></div>
+              <div class="example_fig scalex"></div>
             </div>
           </figure>
           <div class="code_snippet">
             <code>
               .foo {<br>
-              transform: scaleX(40px);<br>
+              transform: scaleX(1.5);<br>
               }
             </code>
           </div>
@@ -127,13 +127,14 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
           <figure id="fig_scale_y">
             <figcaption>2D scale...y</figcaption>
             <div class="example_fig_box">
-              <div class="example_fig"></div>
+              <div class="example_fig scaley"></div>
             </div>
+
           </figure>
           <div class="code_snippet">
             <code>
               .foo {<br>
-              transform: scaleY(40px);<br>
+              transform: scaleY(1.5);<br>
               }
             </code>
           </div>
@@ -144,13 +145,13 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
           <figure id="fig_scale_xy">
             <figcaption>2D scale...xy</figcaption>
             <div class="example_fig_box">
-              <div class="example_fig"></div>
+              <div class="example_fig scalexy"></div>
             </div>
           </figure>
           <div class="code_snippet">
             <code>
               .foo {<br>
-              transform: scale(40px, 40px);<br>
+              transform: scale(0.5, 0.5);<br>
               }
             </code>
           </div>
@@ -161,7 +162,7 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
           <figure id="fig_scale_z">
             <figcaption>3D scale...z</figcaption>
             <div class="example_fig_box">
-              <div class="example_fig"></div>
+              <div class="example_fig scalez"></div>
             </div>
           </figure>
           <div class="code_snippet">
