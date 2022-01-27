@@ -199,28 +199,32 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="subsec_intro">
           <p>... tilts an element to the right or left.</p>
           <ul>
-            <li><a href="#">skewX()</a></li>
-            <li><a href="#">skewY()</a></li>
-            <li><a href="#">skew(x,y)</a></li>
+            <li><a href="#fig_skew_x">skewX()</a></li>
+            <li><a href="#fig_skew_y">skewY()</a></li>
+            <li><a href="#fig_skew_xy">skew(x,y)</a></li>
           </ul>
         </div>
         <!--end of subsection_intro-->
         <div class="subsection_box">
           <figure id="fig_no_skew">
             <figcaption>What we start with...</figcaption>
-            <div></div>
+            <div class="example_fig_box">
+              <div class="example_fig"></div>
+            </div>
           </figure>
         </div>
         <!--end of subsection_box - noskew-->
         <div class="subsection_box">
           <figure id="fig_skew_x">
             <figcaption>skew...X</figcaption>
-            <div></div>
+            <div class="example_fig_box">
+              <div class="example_fig skewx"></div>
+            </div>
           </figure>
           <div class="code_snippet">
             <code>
               .foo {<br>
-              transform: skewX(10px);<br>
+              transform: skewX(10deg);<br>
               }
             </code>
           </div>
@@ -230,12 +234,14 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="subsection_box">
           <figure id="fig_skew_y">
             <figcaption>skew...Y</figcaption>
-            <div></div>
+            <div class="example_fig_box">
+              <div class="example_fig skewy"></div>
+            </div>
           </figure>
           <div class="code_snippet">
             <code>
               .foo {<br>
-              transform: skewY(10px);<br>
+              transform: skewY(10deg);<br>
               }
             </code>
           </div>
@@ -245,12 +251,14 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="subsection_box">
           <figure id="fig_skew_xy">
             <figcaption>skew...XY</figcaption>
-            <div></div>
+            <div class="example_fig_box">
+              <div class="example_fig skewxy"></div>
+            </div>
           </figure>
           <div class="code_snippet">
             <code>
               .foo {<br>
-              transform: skew(10px 10px);<br>
+              transform: skew(10deg, 25deg);<br>
               }
             </code>
           </div>
