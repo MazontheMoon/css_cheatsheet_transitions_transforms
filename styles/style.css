@@ -91,7 +91,7 @@ h1 {
   border-bottom: dotted 3px #000;
   text-align: center;
   font-family: var(--font_main);
-  font-size: clamp(1.2rem, 2rem, 2.6rem);
+  font-size: clamp(1.2rem, 2rem, 3.2rem);
   letter-spacing: 3px;
   font-kerning: none;
   text-shadow: 0px 0px 10px #000, 1px 1px 2px #000, -1px -1px 2px #000;
@@ -288,6 +288,7 @@ code example figures
   -webkit-transform: scale(0.5, 0.5);
   transform: scale(0.5, 0.5);
 }
+
 /*
 .scalez {
   perspective: 550px;
@@ -297,6 +298,19 @@ code example figures
   transform: scale(0.5);
 }
 */
+
+/*skew examples*/
+.skewx {
+  transform: skewX(10deg);
+}
+
+.skewy {
+  transform: skewY(10deg);
+}
+
+.skewxy {
+  transform: skew(10deg, 10deg);
+}
 /*=====
 Sidebar
 ======*/
