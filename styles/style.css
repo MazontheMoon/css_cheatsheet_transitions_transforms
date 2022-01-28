@@ -289,16 +289,6 @@ code example figures
   transform: scale(0.5, 0.5);
 }
 
-/*
-.scalez {
-  perspective: 550px;
-  transform-style: preserve-3d;
-  -moz-transform: scalez(0.5);
-  -webkit-transform: scale(0.5);
-  transform: scale(0.5);
-}
-*/
-
 /*skew examples*/
 .skewx {
   transform: skewX(10deg);
@@ -311,6 +301,7 @@ code example figures
 .skewxy {
   transform: skew(10deg, 10deg);
 }
+
 /*=====
 Sidebar
 ======*/
