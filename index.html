@@ -92,8 +92,8 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
             <li><a href="#fig_scale_xy">scale(x,y)</a></li>
             <li><a href="#fig_scale_x">scaleX()</a></li>
             <li><a href="#fig_scale_y">scaleY()</a></li>
-            <li><a href="#fig_scale_z">scaleZ(z)</a></li>
-            <li><a href="#fig_scale_xyz">scale3d(x,y,z)</a></li>
+            <li><a href="#subsec_3d">scaleZ(z)</a></li>
+            <li><a href="#subsec_3d">scale3d(x,y,z)</a></li>
           </ul>
         </div>
         <!--end of subsection_intro-->
@@ -141,57 +141,6 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
           <!--end of code_snippet box-->
         </div>
         <!--end of subsection_box - scaleY-->
-        <div class="subsection_box">
-          <figure id="fig_scale_xy">
-            <figcaption>2D scale...xy</figcaption>
-            <div class="example_fig_box">
-              <div class="example_fig scalexy"></div>
-            </div>
-          </figure>
-          <div class="code_snippet">
-            <code>
-              .foo {<br>
-              transform: scale(0.5, 0.5);<br>
-              }
-            </code>
-          </div>
-          <!--end of code_snippet box-->
-        </div>
-        <!--end of subsection_box - scaleXY-->
-        <div class="subsection_box">
-          <figure id="fig_scale_z">
-            <figcaption>3D scale...z</figcaption>
-            <div class="example_fig_box">
-              <div class="example_fig scalez"></div>
-            </div>
-          </figure>
-          <div class="code_snippet">
-            <code>
-              .foo {<br>
-              transform: scaleZ(40px);<br>
-              }
-            </code>
-          </div>
-          <!--end of code_snippet box-->
-        </div>
-        <!--end of subsection_box - scaleZ-->
-        <div class="subsection_box">
-          <figure id="fig_scale_zxy">
-            <figcaption>3D scale...zxy</figcaption>
-            <div class="example_fig_box">
-              <div class="example_fig"></div>
-            </div>
-          </figure>
-          <div class="code_snippet">
-            <code>
-              .foo {<br>
-              transform: scale3D(40px, 40px, 40px);<br>
-              }
-            </code>
-          </div>
-          <!--end of code_snippet box-->
-        </div>
-        <!--end of subsection_box - scaleZXY-->
       </div>
       <!--end of subsection - scale-->
       <div class="subsection" id="subsec_skew">
@@ -275,8 +224,8 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
             <li><a href="#">translateX()</a></li>
             <li><a href="#">translateY()</a></li>
             <li><a href="#">translate(x,y)</a></li>
-            <li><a href="#">translateZ()</a></li>
-            <li><a href="#">translate3d(x, y, z)</a></li>
+            <li><a href="#subsec_3d">translateZ()</a></li>
+            <li><a href="#subsec_3d">translate3d(x, y, z)</a></li>
           </ul>
         </div>
         <!--end of subsection_intro-->
@@ -325,37 +274,6 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
           <!--end of code_snippet box-->
         </div>
         <!--end of subsection_box - trans_xy-->
-        <div class="subsection_box">
-          <figure id="fig_trans_z">
-            <figcaption>Translate...Z</figcaption>
-            <div></div>
-          </figure>
-          <div class="code_snippet">
-            <code>
-              /*z moves element toward viewer (negative value moves away)*/<br>
-              .foo {<br>
-              transform: translateZ(20px);<br>
-              }
-            </code>
-          </div>
-          <!--end of code_snippet box-->
-        </div>
-        <!--end of subsection_box - trans_z-->
-        <div class="subsection_box">
-          <figure id="fig_trans_xyz">
-            <figcaption>Translate...XYZ</figcaption>
-            <div></div>
-          </figure>
-          <div class="code_snippet">
-            <code>
-              .foo {<br>
-              transform: translateXYZ(20px 20px 20px);<br>
-              }
-            </code>
-          </div>
-          <!--end of code_snippet box-->
-        </div>
-        <!--end of subsection_box - trans_xyz-->
       </div>
       <!--end of subsection - translate-->
       <div class="subsection" id="subsec_rotate">
@@ -366,7 +284,7 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
             <li><a href="#">rotate(deg)</a></li>
             <li><a href="#">rotateX()</a></li>
             <li><a href="#">rotateY()</a></li>
-            <li><a href="#">rotate3d(x,y,z)</a></li>
+            <li><a href="#subsec_3d">rotate3d(x,y,z)</a></li>
           </ul>
         </div>
         <!--end of subsection_intro-->
@@ -422,21 +340,6 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
           <!--end of code_snippet box-->
         </div>
         <!--end of subsection_box - rotate_y-->
-        <div class="subsection_box">
-          <figure id="fig_rotate_3d">
-            <figcaption>rotate...3D</figcaption>
-            <div></div>
-          </figure>
-          <div class="code_snippet">
-            <code>
-              .foo {<br>
-              transform: rotate3d(40deg 40deg 40px);<br>
-              }
-            </code>
-          </div>
-          <!--end of code_snippet box-->
-        </div>
-        <!--end of subsection_box - rotate_3d-->
       </div>
       <!--end of subsection - rotate-->
       <div class="subsection" id="subsec_matrix">
@@ -506,6 +409,19 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         </div>
       </div>
       <!--end of subsection - transform_style -->
+      <!--3d scale, rotate, transform subsection added here to show working together-->
+      <div class="subsection" id="subsec_3d">
+        <h3>3D</h3>
+        <div class="subsec_intro">
+          <p>Now for the 3D transforms...</p>
+          <ul>
+            <li><a href="#">3Dscale</a></li>
+            <li><a href="#">3Dtranslate</a></li>
+            <li><a href="#">3Drotate</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--end of subsection_intro-->
     </section>
     <!--end of section - transforms-->
     <section id="sec_transitions">
