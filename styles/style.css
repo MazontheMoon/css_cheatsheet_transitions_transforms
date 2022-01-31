@@ -302,6 +302,18 @@ code example figures
   transform: skew(10deg, 10deg);
 }
 
+/*translate examples*/
+.translatex {
+  transform: translateX(50px);
+}
+
+.translatey {
+  transform: translateY(-20px);
+}
+
+.translatexy {
+  transform: translate(50px, 50px);
+}
 /*=====
 Sidebar
 ======*/

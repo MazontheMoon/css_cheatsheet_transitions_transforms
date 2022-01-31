@@ -107,6 +107,23 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         </div>
         <!--end of subsection_box - noscale-->
         <div class="subsection_box">
+          <figure id="fig_scale_xy">
+            <figcaption>2D scale...xy</figcaption>
+            <div class="example_fig_box">
+              <div class="example_fig scalexy"></div>
+            </div>
+          </figure>
+          <div class="code_snippet">
+            <code>
+              .foo {<br>
+              transform: scale(0.5, 0.5);<br>
+              }
+            </code>
+          </div>
+          <!--end of code_snippet box-->
+        </div>
+        <!--end of subsection_box - scaleXY-->
+        <div class="subsection_box">
           <figure id="fig_scale_x">
             <figcaption>2D scale...x</figcaption>
             <div class="example_fig_box">
@@ -221,18 +238,29 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="subsec_intro">
           <p>...moves an element sideways or up and down. </p>
           <ul>
-            <li><a href="#">translateX()</a></li>
-            <li><a href="#">translateY()</a></li>
-            <li><a href="#">translate(x,y)</a></li>
+            <li><a href="#fig_trans_x">translateX()</a></li>
+            <li><a href="#fig_trans_y">translateY()</a></li>
+            <li><a href="#fig_trans_xy">translate(x,y)</a></li>
             <li><a href="#subsec_3d">translateZ()</a></li>
             <li><a href="#subsec_3d">translate3d(x, y, z)</a></li>
           </ul>
         </div>
         <!--end of subsection_intro-->
         <div class="subsection_box">
+          <figure id="fig_no_translate">
+            <figcaption>What we start with...</figcaption>
+            <div class="example_fig_box">
+              <div class="example_fig"></div>
+            </div>
+          </figure>
+        </div>
+        <!--end of subsection_box - notranslate-->
+        <div class="subsection_box">
           <figure id="fig_trans_x">
             <figcaption>Translate...X</figcaption>
-            <div></div>
+            <div class="example_fig_box">
+              <div class="example_fig translatex"></div>
+            </div>
           </figure>
           <div class="code_snippet">
             <code>
@@ -247,12 +275,14 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="subsection_box">
           <figure id="fig_trans_y">
             <figcaption>Translate...Y</figcaption>
-            <div></div>
+            <div class="example_fig_box">
+              <div class="example_fig translatey"></div>
+            </div>
           </figure>
           <div class="code_snippet">
             <code>
               .foo {<br>
-              transform: translateY(20px);<br>
+              transform: translateY(-20px);<br>
               }
             </code>
           </div>
@@ -262,7 +292,9 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="subsection_box">
           <figure id="fig_trans_xy">
             <figcaption>Translate...XY</figcaption>
-            <div></div>
+            <div class="example_fig_box">
+              <div class="example_fig translatexy"></div>
+            </div>
           </figure>
           <div class="code_snippet">
             <code>
