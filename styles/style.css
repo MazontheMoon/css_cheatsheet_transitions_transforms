@@ -314,6 +314,19 @@ code example figures
 .translatexy {
   transform: translate(50px, 50px);
 }
+
+/*rotate examples*/
+.rotate {
+  transform: rotate(40deg);
+}
+
+.rotatex {
+  transform: rotateX(40deg);
+}
+
+.rotatey {
+  transform: rotateY(40deg);
+}
 /*=====
 Sidebar
 ======*/
@@ -472,6 +485,10 @@ Accessibility
   root {
     --col_dark: #1e1b18;
     --col_light: #fffaff;
+  }
+
+  img {
+    filter: brightness(0.8) saturate(1.25);
   }
 }
 
