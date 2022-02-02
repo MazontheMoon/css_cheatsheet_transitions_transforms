@@ -327,6 +327,12 @@ code example figures
 .rotatey {
   transform: rotateY(40deg);
 }
+
+/*3D examples*/
+
+.example_fig_3d {
+  /*cube*/
+}
 /*=====
 Sidebar
 ======*/
