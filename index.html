@@ -430,7 +430,10 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
           <div class="code_snippet">
             <code>
               .element {<br>
-              transform: perspective 100px, rotate(25deg);<br>
+              <span class="comment">/*the higher the value the further the view point*/</span><br>
+              perspective: 800px;<br>
+              <span class="comment">/*center by default*/</span><br>
+              perspective-origin: top right; /*<br>
               }</code>
           </div>
         </div>
@@ -448,7 +451,7 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
               .element {<br>
               transform-style: preserve-3d;<br>
               }<br>
-              /*otherwise <span class="code_word">transform-style: flat;</span>*/
+              <span class="comment">/*otherwise <span class="code_word">transform-style: flat;</span>*/</span>
             </code>
           </div>
         </div>
@@ -477,6 +480,8 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="code_snippet">
           <code>
             .foo {<br>
+            <span class="comment">/*3D cube*/</span><br>
+
             }
           </code>
         </div>
@@ -484,10 +489,15 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
       </div>
       <!--end of subsection_box - 3D-->
       <div class="subsection_box">
-        <h4>3D....scale()</h4>
+        <figure id="fig_3Dscale">
+          <figcaption>scale3d()...</figcaption>
+          <div class="example_fig_box">
+          </div>
+        </figure>
         <div class="code_snippet">
           <code>
             .foo {<br>
+            <span class="comment">/**/</span><br>
             }
           </code>
         </div>
@@ -495,10 +505,15 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
       </div>
       <!--end of subsection_box - 3D_scale-->
       <div class="subsection_box">
-        <h4>3D...translate()</h4>
+        <figure id="fig_3Dtranslate">
+          <figcaption>translate()...</figcaption>
+          <div class="example_fig_box">
+          </div>
+        </figure>
         <div class="code_snippet">
           <code>
             .foo {<br>
+            <span class="comment">/**/</span><br>
             }
           </code>
         </div>
@@ -506,10 +521,15 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
       </div>
       <!--end of subsection_box - 3D_translate-->
       <div class="subsection_box">
-        <h4>3D...rotate()</h4>
+        <figure id="fig_3Drotate">
+          <figcaption>rotate()...</figcaption>
+          <div class="example_fig_box">
+          </div>
+        </figure>
         <div class="code_snippet">
           <code>
             .foo {<br>
+            <span class="comment">/**/</span><br>
             }
           </code>
         </div>
