@@ -481,6 +481,9 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
           <code>
             .foo {<br>
             <span class="comment">/*3D cube*/</span><br>
+            <!--
+            https://css-tricks.com/how-css-perspective-works/
+            -->
 
             }
           </code>
@@ -489,15 +492,14 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
       </div>
       <!--end of subsection_box - 3D-->
       <div class="subsection_box">
-        <figure id="fig_3Dscale">
-          <figcaption>scale3d()...</figcaption>
-          <div class="example_fig_box">
-          </div>
-        </figure>
+        <h3>scale3d()...</h3>
         <div class="code_snippet">
           <code>
             .foo {<br>
             <span class="comment">/**/</span><br>
+            transform: scaleZ();<br>
+            <span class="comment">/**/</span><br>
+            transform: scale3d();<br>
             }
           </code>
         </div>
@@ -505,15 +507,14 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
       </div>
       <!--end of subsection_box - 3D_scale-->
       <div class="subsection_box">
-        <figure id="fig_3Dtranslate">
-          <figcaption>translate()...</figcaption>
-          <div class="example_fig_box">
-          </div>
-        </figure>
+        <h3>translate()...</h3>
         <div class="code_snippet">
           <code>
             .foo {<br>
+           <span class="comment">/**/</span><br>
+            transform: translateZ();<br>
             <span class="comment">/**/</span><br>
+            transform: translate3d();<br>
             }
           </code>
         </div>
@@ -521,15 +522,12 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
       </div>
       <!--end of subsection_box - 3D_translate-->
       <div class="subsection_box">
-        <figure id="fig_3Drotate">
-          <figcaption>rotate()...</figcaption>
-          <div class="example_fig_box">
-          </div>
-        </figure>
+          <h3>rotate()...</h3>
         <div class="code_snippet">
           <code>
             .foo {<br>
             <span class="comment">/**/</span><br>
+            transform: rotate3d();<br>
             }
           </code>
         </div>
