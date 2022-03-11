@@ -241,6 +241,7 @@ code {
 
 code .comment {
   font-style: italic;
+  font-weight: normal;
 }
 
 main figure {
