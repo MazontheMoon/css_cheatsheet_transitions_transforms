@@ -474,7 +474,9 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <figure id="fig_3D">
           <figcaption>3D...</figcaption>
           <div class="example_fig_box">
-            <div class="example_fig_3D"></div>
+            <div class="example_fig_3D">
+              [insert dice here]
+            </div>
           </div>
         </figure>
         <div class="code_snippet">
@@ -496,9 +498,10 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="code_snippet">
           <code>
             .foo {<br>
-            <span class="comment">/**/</span><br>
-            transform: scaleZ();<br>
-            <span class="comment">/**/</span><br>
+            transform: scaleX();<br>
+            transform: scaleY();<br>
+            transform: scaleZ();<br><br>
+            <span class="comment">/*this can be used as shorthand to combine scaleX(), scaleY() and scaleZ()*/</span><br>
             transform: scale3d();<br>
             }
           </code>
@@ -507,13 +510,14 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
       </div>
       <!--end of subsection_box - 3D_scale-->
       <div class="subsection_box">
-        <h3>translate()...</h3>
+        <h3>translate3d(x,y,z)...</h3>
         <div class="code_snippet">
           <code>
             .foo {<br>
-           <span class="comment">/**/</span><br>
-            transform: translateZ();<br>
-            <span class="comment">/**/</span><br>
+            transform: translateX();<br>
+            transform: translateY();<br>
+            transform: translateZ();<br><br>
+            <span class="comment">/*this can be used as shorthand to combine translateX(), translateY() and translateZ()*/</span><br>
             transform: translate3d();<br>
             }
           </code>
@@ -522,11 +526,14 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
       </div>
       <!--end of subsection_box - 3D_translate-->
       <div class="subsection_box">
-          <h3>rotate()...</h3>
+        <h3>rotate3d(x,y,z,angle)...</h3>
         <div class="code_snippet">
           <code>
             .foo {<br>
-            <span class="comment">/**/</span><br>
+            transform: rotateX();<br>
+            transform: rotateY();<br>
+            transform: rotateZ();<br><br>
+            <span class="comment">/*this can be used as shorthand to combine rotateX(), rotateY() and rotateZ()*/</span><br>
             transform: rotate3d();<br>
             }
           </code>
