@@ -498,11 +498,14 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="code_snippet">
           <code>
             .foo {<br>
-            transform: scaleX();<br>
-            transform: scaleY();<br>
-            transform: scaleZ();<br><br>
-            <span class="comment">/*this can be used as shorthand to combine scaleX(), scaleY() and scaleZ()*/</span><br>
-            transform: scale3d();<br>
+            transform: scaleX(1);<span class="comment">/*side to side*/</span><br>
+            transform: scaleY(1.5);<span class="comment">/*up and down*/</span><br>
+            transform: scaleZ(0.5);<span class="comment">/*in and out*/</span><br>
+            }
+          </code>
+          <code>
+            .foo {<br>
+            transform: scale3d(1, 1.5, 0.5);<br>
             }
           </code>
         </div>
@@ -514,11 +517,14 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="code_snippet">
           <code>
             .foo {<br>
-            transform: translateX();<br>
-            transform: translateY();<br>
-            transform: translateZ();<br><br>
-            <span class="comment">/*this can be used as shorthand to combine translateX(), translateY() and translateZ()*/</span><br>
-            transform: translate3d();<br>
+            transform: translateX(40px);<br>
+            transform: translateY(40px);<br>
+            transform: translateZ(100px);<br>
+            }
+          </code>
+          <code>
+            .foo {<br>
+            transform: translate3d(40px, 40px, 100px);<br>
             }
           </code>
         </div>
@@ -530,11 +536,15 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
         <div class="code_snippet">
           <code>
             .foo {<br>
-            transform: rotateX();<br>
-            transform: rotateY();<br>
-            transform: rotateZ();<br><br>
-            <span class="comment">/*this can be used as shorthand to combine rotateX(), rotateY() and rotateZ()*/</span><br>
-            transform: rotate3d();<br>
+            transform: rotateX(45deg);<br>
+            transform: rotateY(120deg);<br>
+            transform: rotateZ(90deg);<br>
+            }
+          </code>
+          <code>
+            .foo {<br>
+            <span class="comment">/*rotate3d(x co-ordinate, y co-ordinate, z co-ordinate, angle)*/</span><br>
+            transform: rotate3d(1, -1, 0, 45deg);<br>
             }
           </code>
         </div>
