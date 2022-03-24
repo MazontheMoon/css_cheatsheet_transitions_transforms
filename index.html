@@ -472,16 +472,17 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
       <!--end of subsection_intro-->
       <div class="subsection_box">
         <figure id="fig_3D">
-          <figcaption>3D...</figcaption>
+          <figcaption>3D cube...</figcaption>
           <div class="example_fig_box">
             <div class="example_fig_3D">
-              [insert dice here]
+              [insert here]
             </div>
           </div>
         </figure>
         <div class="code_snippet">
           <code>
             ...<br>
+            &lt;div class="container"&gt;<br>
             &lt;div class="cube"&gt;<br>
             &lt;div class="face front"&gt;&lt;/div&gt;<br>
             &lt;div class="face back"&gt;&lt;/div&gt;<br>
@@ -490,16 +491,54 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
             &lt;div class="face top"&gt;&lt;/div&gt;<br>
             &lt;div class="face bottom"&gt;&lt;/div&gt;<br>
             &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
             ...
           </code>
           <code>
-            .foo {<br>
-            <span class="comment">/*3D cube*/</span><br>
-            <!--
-            https://css-tricks.com/how-css-perspective-works/
-            -->
-
-            }
+            .container {<br>
+            width: 200px;<br>
+            height: 200px;<br>
+            perspective: 1000px;<br>
+            margin: 100px auto 0;<br>
+            }<br>
+            <br>
+            .cube { <br>
+            transform-style: preserve-3d;<br>
+            width: 100%;<br>
+            height: 100%;<br>
+            position: relative;<br>
+            }<br>
+            <br>
+            .face { <br>
+            position: absolute;<br>
+            width: 100%;<br>
+            height: 100%;<br>
+            background:...<br>
+            }<br>
+            <br>
+            .top {<br>
+            transform: rotateX(90deg) translateZ(100px);<br>
+            }<br>
+            <br>
+            .bottom {<br>
+            transform: rotateX(-90deg) translateZ(100px);<br>
+            }<br>
+            <br>
+            .right {<br>
+            transform: rotateY(90deg) translateZ(100px);<br>
+            }<br>
+            <br>
+            .left {<br>
+            transform: rotateY(-90deg) translateZ(100px);<br>
+            }<br>
+            <br>
+            .front {<br>
+            transform: rotateX(0deg) translateZ(100px);<br>
+            }<br>
+            <br>
+            .back {<br>
+            transform: rotateX(-180deg) translateZ(100px);<br>
+            }<br>
           </code>
         </div>
         <!--end of code_snippet box-->
