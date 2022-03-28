@@ -200,7 +200,7 @@ h3 {
   margin-block-end: 0.2rem;
   color: var(--col_highlight);
   text-shadow: 1px 1px 2px #000;
-  font-size: clamp(0.8rem, 1.2rem, 1.8rem);
+  font-size: clamp(1rem, 1.4rem, 1.8rem);
 }
 
 .subsec_intro ul li a {
@@ -405,6 +405,22 @@ code example figures
   to {
     transform: rotateX(360deg) rotateY(360deg);
   }
+}
+
+/*transition examples*/
+.trans_example {
+  margin: 0 auto;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trans_box {
+  width: 100px;
+  height: 100px;
+  background-color: var(--col_light);
 }
 
 /*=====
