@@ -421,8 +421,41 @@ code example figures
   width: 100px;
   height: 100px;
   background-color: var(--col_light);
+  animation: flip 6s infinite;
 }
 
+.ease {
+  transition-timing-function: ease;
+}
+
+.linear {
+  transition-timing-function: linear;
+}
+
+.ease-in {
+  transition-timing-function: ease-in;
+}
+
+.ease-out {
+  transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.cubic_bezier {
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+}
+
+@keyframes flip {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 /*=====
 Sidebar
 ======*/
