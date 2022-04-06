@@ -13,10 +13,6 @@ Page variables
 
   /*fonts*/
   --font_main: "Roboto", sans-serif;
-
-  /*margins and paddings*/
-
-  /*borders*/
 }
 
 /*======================================
@@ -643,7 +639,22 @@ Accessibility
     Ye Olde Time Print View
     ========================*/
 @media print {
+  body {
+    background-color: unset;
+    color: #000;
+  }
+
   /*remove unneeded elements*/
+  header,
+  nav,
+  .sub_nav,
+  .example_fig_box,
+  fig_3D,
+  .trans_example,
+  aside,
+  footer {
+    display: none;
+  }
 
   /*display footer links*/
 
