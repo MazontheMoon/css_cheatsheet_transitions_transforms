@@ -175,7 +175,7 @@ h2 {
 
 /*button actions for sub-menu*/
 .sub_nav li:hover,
-.sub_nav li:hover {
+.sub_nav li:active {
   background-color: var(--col_main);
 }
 
@@ -216,7 +216,7 @@ h3 {
 }
 
 .subsec_intro ul li:hover,
-.subsec_intro ul li:hover {
+.subsec_intro ul li:active {
   background-color: var(--col_highlight);
 }
 /*=============================
@@ -649,7 +649,7 @@ Accessibility
   nav,
   .sub_nav,
   .example_fig_box,
-  fig_3D,
+  #fig_3D,
   .trans_example,
   aside,
   footer {
