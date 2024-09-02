@@ -1,0 +1,15 @@
+backface-visibilty
+
+- property sets whether the back face of an element is visible when turned towards the user.
+
+/* Keyword values */
+backface-visibility: visible; //The back face is visible when turned towards the user.
+
+backface-visibility: hidden; // The back face is hidden, effectively making the element invisible when turned away from the user.
+
+/* Global values */
+backface-visibility: inherit;
+backface-visibility: initial;
+backface-visibility: revert;
+backface-visibility: revert-layer;
+backface-visibility: unset;
